@@ -100,9 +100,11 @@
 
             <!-- 3. Tổ chức hệ thống -->
             <div class="content-block">
-                <h3 class="block-title">3. TỔ CHỨC HỆ THỐNG</h3>
-                    <div class="org-chart-wrapper">
-                        <div class="org-chart">
+                <div class="info-card">
+                    <div class="card-header">III/ TỔ CHỨC HỆ THỐNG (SƠ ĐỒ 3 CẤP)</div>
+                    <div class="card-body" style="padding: 0;">
+                        <div class="org-chart-wrapper">
+                            <div class="org-chart">
                             <!-- Tier 1 -->
                             <div class="org-node">
                                 <div class="org-avatar">T1</div>
@@ -223,7 +225,7 @@
                                 <div class="enduser-tile">
                                     <div class="enduser-header">
                                         <div class="enduser-icon">GV</div>
-                                        <div class="enduser-title">Trang Giáo viên</div>
+                                        <div class="enduser-title">Trang Giảng viên</div>
                                     </div>
                                     <div class="enduser-desc">Lớp phụ trách · điểm danh/đánh giá · nhập điểm · tương tác học tập.</div>
                                     <div class="enduser-tags">
@@ -235,61 +237,41 @@
                     </div>
                 </div>
 
-                <!-- 4. Các dịch vụ tích hợp và kênh thanh toán -->
-                <div class="subsection">
-                    <h4 class="subsection-title">4. CÁC DỊCH VỤ TÍCH HỢP VÀ KÊNH THANH TOÁN</h4>
-                    
-                    <div class="integrations-grid">
-                        <!-- Dịch vụ giảng dạy -->
-                        <div class="integration-category">
-                            <h5 class="category-title">Dịch vụ giảng dạy - Học trực tuyến</h5>
-                            <div class="integration-items">
-                                <div class="integration-item">
-                                    <div class="item-icon">📹</div>
-                                    <span>Google Meet</span>
-                                </div>
-                                <div class="integration-item">
-                                    <div class="item-icon">💻</div>
-                                    <span>Zoom</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Kênh thanh toán -->
-                        <div class="integration-category">
-                            <h5 class="category-title">Kênh thanh toán</h5>
-                            <div class="integration-items">
-                                <div class="integration-item payment">
-                                    <div class="item-icon">🏦</div>
-                                    <span>VCB / ACB</span>
-                                </div>
-                                <div class="integration-item payment">
-                                    <div class="item-icon">💳</div>
-                                    <span>Momo</span>
-                                </div>
-                                <div class="integration-item payment">
-                                    <div class="item-icon">...</div>
-                                    <span>Và nhiều kênh khác</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SMS / OTP -->
-                        <div class="integration-category">
-                            <h5 class="category-title">SMS / OTP</h5>
-                            <div class="integration-items">
-                                <div class="integration-item">
-                                    <div class="item-icon">💬</div>
-                                    <span>Zalo</span>
-                                </div>
-                                <div class="integration-item">
-                                    <div class="item-icon">🔐</div>
-                                    <span>Authy</span>
-                                </div>
+            <!-- 4. Các dịch vụ tích hợp và kênh thanh toán -->
+            <div class="content-block">
+                <div class="cards-grid">
+                    <!-- Card IV: Dịch vụ tích hợp -->
+                    <div class="info-card">
+                        <div class="card-header">IV/ CÁC DỊCH VỤ TÍCH HỢP</div>
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Học trực tuyến:</strong> Google Meet, Zoom (phục vụ giảng dạy – học trực tuyến)</li>
+                                <li><strong>SMS / OTP:</strong> Zalo, Authy (có thể mở rộng nhà cung cấp)</li>
+                            </ul>
+                            <div class="pill-row" style="margin-top:12px;">
+                                <span class="pill">SSO (tuỳ chọn)</span>
+                                <span class="pill">Webhook / API Integration</span>
+                                <span class="pill">Audit log</span>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Card V: Kênh thanh toán -->
+                    <div class="info-card">
+                        <div class="card-header">V/ KÊNH THANH TOÁN</div>
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Ngân hàng:</strong> VCB / ACB (mở rộng thêm theo nhu cầu)</li>
+                                <li><strong>Ví điện tử:</strong> MoMo</li>
+                                <li><strong>Khác:</strong> có thể tích hợp thêm cổng thanh toán/đối soát</li>
+                            </ul>
+                            <p class="muted-text" style="margin:12px 0 0 0; font-size:12px; font-weight:650;">
+                                Gợi ý: phần này có thể bổ sung danh sách đối tác theo từng gói triển khai.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </div>
     </section>
