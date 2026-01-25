@@ -12,7 +12,23 @@
         <nav class="navbar">
             <div class="container">
                 <div class="logo">
-                    <h1>Campus Cloud</h1>
+                    <svg class="logo-icon" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Shield shape -->
+                        <path d="M50 5 L15 15 L15 50 Q15 80 30 95 Q45 110 50 115 Q55 110 70 95 Q85 80 85 50 L85 15 Z" fill="#dc2626" stroke="#b91c1c" stroke-width="2"/>
+                        <!-- House -->
+                        <path d="M50 35 L35 45 L35 70 L65 70 L65 45 Z" fill="white"/>
+                        <!-- Roof -->
+                        <path d="M50 25 L30 38 L70 38 Z" fill="white"/>
+                        <!-- Windows -->
+                        <rect x="40" y="50" width="8" height="8" fill="#dc2626"/>
+                        <rect x="52" y="50" width="8" height="8" fill="#dc2626"/>
+                        <!-- Door -->
+                        <path d="M45 70 L45 60 Q45 55 50 55 Q55 55 55 60 L55 70 Z" fill="#dc2626"/>
+                    </svg>
+                    <div class="logo-text">
+                        <div class="logo-line">CAMPUS</div>
+                        <div class="logo-line">CLOUD</div>
+                    </div>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#tong-quan">Tổng quan</a></li>
@@ -41,102 +57,179 @@
                 <h2 class="section-title">A. TỔNG QUAN SẢN PHẨM</h2>
             </div>
 
-            <!-- I. Giới thiệu -->
-            <div class="content-block">
-                <h3 class="block-title">I. GIỚI THIỆU</h3>
-                <div class="intro-content">
-                    <p class="intro-text">
-                        <strong>Campus Cloud</strong> là giải pháp tổng thể dùng quản lý Đại Học, Cao Đẳng, Trung Cấp, Trường Nghề. 
-                        Với khả năng tùy biến và tương thích với đặc tính vận hành của từng Cơ Sở Đào Tạo. 
-                        Ưu tiên <strong>ownership</strong> của khách hàng.
-                    </p>
+            <!-- I & II: Card Layout -->
+            <div class="cards-grid">
+                <!-- Card I: Giới thiệu -->
+                <div class="info-card">
+                    <div class="card-header">I/ GIỚI THIỆU</div>
+                    <div class="card-body">
+                        <p>
+                            <strong>Campus Cloud</strong> là giải pháp tổng thể dùng quản lý <strong>Đại học</strong>, <strong>Cao đẳng</strong>, <strong>Trung cấp</strong>, <strong>Trường nghề</strong>.
+                            Hệ thống có khả năng <strong>tuỳ biến</strong> và <strong>tương thích</strong> với đặc tính vận hành của từng <strong>Cơ Sở Đào Tạo</strong>, đồng thời ưu tiên <strong>ownership</strong> của khách hàng.
+                        </p>
+                        <div class="pill-row">
+                            <span class="pill">Module hoá</span>
+                            <span class="pill">API-first</span>
+                            <span class="pill">Cloud-ready</span>
+                            <span class="pill">Phân quyền rõ ràng</span>
+                            <span class="pill">Dữ liệu tập trung</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card II: Đối tượng sử dụng - Môi trường triển khai -->
+                <div class="info-card">
+                    <div class="card-header">II/ ĐỐI TƯỢNG SỬ DỤNG – MÔI TRƯỜNG TRIỂN KHAI</div>
+                    <div class="card-body">
+                        <p class="muted-text" style="margin:0 0 8px 0; font-weight:750;">1/ Đối tượng sử dụng</p>
+                        <ul>
+                            <li>Người ứng tuyển</li>
+                            <li>Sinh viên</li>
+                            <li>Giảng viên</li>
+                            <li>Cán bộ / Công nhân viên chức – các phòng ban của nhà trường</li>
+                        </ul>
+
+                        <p class="muted-text" style="margin:14px 0 8px 0; font-weight:750;">2/ Nền tảng</p>
+                        <ul>
+                            <li><strong>Web app</strong> là chính</li>
+                            <li><strong>Mobile / Desktop app</strong> (optional)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- II. Đối tượng sử dụng - môi trường triển khai - hệ thống -->
+            <!-- 3. Tổ chức hệ thống -->
             <div class="content-block">
-                <h3 class="block-title">II. ĐỐI TƯỢNG SỬ DỤNG - MÔI TRƯỜNG TRIỂN KHAI - HỆ THỐNG</h3>
-                
-                <!-- 1. Đối tượng -->
-                <div class="subsection">
-                    <h4 class="subsection-title">1. ĐỐI TƯỢNG</h4>
-                    <div class="user-types-simple">
-                        <div class="center-label-box">CÁC ĐỐI TƯỢNG NGƯỜI DÙNG</div>
-                        <div class="user-types-grid">
-                            <div class="user-type-item">
-                                <div class="user-avatar-circle avatar-blue">👤</div>
-                                <span>Người ứng tuyển</span>
+                <h3 class="block-title">3. TỔ CHỨC HỆ THỐNG</h3>
+                    <div class="org-chart-wrapper">
+                        <div class="org-chart">
+                            <!-- Tier 1 -->
+                            <div class="org-node">
+                                <div class="org-avatar">T1</div>
+                                <div class="org-content">
+                                    <div class="org-title">Tầng 1: Trang Admin toàn hệ thống</div>
+                                    <span class="org-subtitle">Quản trị nền tảng · cấu hình tenant · phân quyền/SSO · quản lý tích hợp</span>
+                                </div>
                             </div>
-                            <div class="user-type-item">
-                                <div class="user-avatar-circle avatar-green">🎓</div>
-                                <span>Sinh viên</span>
-                            </div>
-                            <div class="user-type-item">
-                                <div class="user-avatar-circle avatar-orange">👨‍🏫</div>
-                                <span>Giảng viên</span>
-                            </div>
-                            <div class="user-type-item">
-                                <div class="user-avatar-circle avatar-purple">👔</div>
-                                <span>Cán bộ / CNV / Phòng Ban</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- 2. Nền tảng -->
-                <div class="subsection">
-                    <h4 class="subsection-title">2. NỀN TẢNG</h4>
-                    <div class="platforms-simple">
-                        <div class="platform-item">
-                            <div class="platform-number">01</div>
-                            <div class="platform-icon-large">💻</div>
-                            <div class="platform-name">WINDOWS APPLICATION</div>
-                        </div>
-                        <div class="platform-item platform-primary">
-                            <div class="platform-number">02</div>
-                            <div class="platform-icon-large">🌐</div>
-                            <div class="platform-name">ỨNG DỤNG WEB</div>
-                            <div class="platform-badge">Nền tảng chính</div>
-                        </div>
-                        <div class="platform-item">
-                            <div class="platform-number">03</div>
-                            <div class="platform-icon-large">📱</div>
-                            <div class="platform-name">SMARTPHONE & TABLET</div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="org-label">Cấp tài khoản</div>
+                            <div class="org-arrow"></div>
 
-                <!-- 3. Tổ chức hệ thống -->
-                <div class="subsection">
-                    <h4 class="subsection-title">3. TỔ CHỨC HỆ THỐNG</h4>
-                    <div class="hierarchy-simple">
-                        <div class="hierarchy-item">
-                            <div class="hierarchy-avatar-large admin-bg">👑</div>
-                            <div class="hierarchy-text">
-                                <div class="hierarchy-title">ADMIN HỆ THỐNG</div>
+                            <!-- Tier 2 -->
+                            <div class="org-node">
+                                <div class="org-avatar">T2</div>
+                                <div class="org-content">
+                                    <div class="org-title">Tầng 2: Trang Staff (giáo vụ – phòng ban)</div>
+                                    <span class="org-subtitle">Vận hành nghiệp vụ · quản trị dữ liệu theo vai trò · khai thác báo cáo</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="hierarchy-arrow-down">↓</div>
-                        <div class="hierarchy-item">
-                            <div class="hierarchy-avatar-large staff-bg">👔</div>
-                            <div class="hierarchy-text">
-                                <div class="hierarchy-title">TRANG STAFF</div>
-                                <div class="hierarchy-subtitle">Giáo vụ - Phòng ban</div>
+
+                            <!-- Departments -->
+                            <div class="org-departments">
+                                <div class="dept-card">
+                                    <div class="dept-dot pink"></div>
+                                    <div class="dept-content">
+                                        <div class="dept-name">Phòng Tuyển sinh</div>
+                                        <div class="dept-hint">Quản lý hồ sơ · xét duyệt · thông báo</div>
+                                        <div class="dept-tags">
+                                            <span class="dept-tag">Staff</span>
+                                            <span class="dept-tag">Trưởng phòng</span>
+                                            <span class="dept-tag">Quyền dữ liệu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dept-card">
+                                    <div class="dept-dot blue"></div>
+                                    <div class="dept-content">
+                                        <div class="dept-name">Đào tạo / Giáo vụ</div>
+                                        <div class="dept-hint">Chương trình · lớp · điểm · học vụ</div>
+                                        <div class="dept-tags">
+                                            <span class="dept-tag">Staff</span>
+                                            <span class="dept-tag">Cố vấn</span>
+                                            <span class="dept-tag">Báo cáo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dept-card">
+                                    <div class="dept-dot green"></div>
+                                    <div class="dept-content">
+                                        <div class="dept-name">Kế toán / Tài chính</div>
+                                        <div class="dept-hint">Học phí · biên lai · công nợ</div>
+                                        <div class="dept-tags">
+                                            <span class="dept-tag">Staff</span>
+                                            <span class="dept-tag">Kế toán</span>
+                                            <span class="dept-tag">Đối soát</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dept-card">
+                                    <div class="dept-dot gray"></div>
+                                    <div class="dept-content">
+                                        <div class="dept-name">Nhân sự</div>
+                                        <div class="dept-hint">Hồ sơ nhân sự · phân công</div>
+                                        <div class="dept-tags">
+                                            <span class="dept-tag">Staff</span>
+                                            <span class="dept-tag">Phân quyền</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dept-card">
+                                    <div class="dept-dot orange"></div>
+                                    <div class="dept-content">
+                                        <div class="dept-name">Phòng ban chức năng khác</div>
+                                        <div class="dept-hint">Tuỳ biến theo mô hình trường</div>
+                                        <div class="dept-tags">
+                                            <span class="dept-tag">Mở rộng</span>
+                                            <span class="dept-tag">Module</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="hierarchy-arrow-down">↓</div>
-                        <div class="hierarchy-items-row">
-                            <div class="hierarchy-item-small">
-                                <div class="hierarchy-avatar user-bg-1">🎓</div>
-                                <div class="hierarchy-title-small">Trang Tuyển Sinh</div>
+
+                            <div class="org-label">Cung cấp dịch vụ</div>
+                            <div class="org-arrow"></div>
+
+                            <!-- Tier 3 -->
+                            <div class="org-node">
+                                <div class="org-avatar">T3</div>
+                                <div class="org-content">
+                                    <div class="org-title">Tầng 3: Tuyển sinh · Sinh viên · Giáo viên</div>
+                                    <span class="org-subtitle">Kênh tương tác trực tuyến dành cho người dùng cuối (end-user)</span>
+                                </div>
                             </div>
-                            <div class="hierarchy-item-small">
-                                <div class="hierarchy-avatar user-bg-2">👨‍🎓</div>
-                                <div class="hierarchy-title-small">Trang Sinh Viên</div>
-                            </div>
-                            <div class="hierarchy-item-small">
-                                <div class="hierarchy-avatar user-bg-3">👨‍🏫</div>
-                                <div class="hierarchy-title-small">Trang Giáo Viên</div>
+
+                            <!-- End User Portals -->
+                            <div class="org-endusers">
+                                <div class="enduser-tile">
+                                    <div class="enduser-header">
+                                        <div class="enduser-icon">TS</div>
+                                        <div class="enduser-title">Trang Tuyển sinh</div>
+                                    </div>
+                                    <div class="enduser-desc">Đăng ký ứng tuyển · nộp hồ sơ · theo dõi trạng thái · nhận thông báo.</div>
+                                    <div class="enduser-tags">
+                                        <span class="enduser-tag">Người ứng tuyển</span>
+                                    </div>
+                                </div>
+                                <div class="enduser-tile">
+                                    <div class="enduser-header">
+                                        <div class="enduser-icon">SV</div>
+                                        <div class="enduser-title">Trang Sinh viên</div>
+                                    </div>
+                                    <div class="enduser-desc">Thông tin cá nhân · lịch học · điểm · học phí · dịch vụ hỗ trợ.</div>
+                                    <div class="enduser-tags">
+                                        <span class="enduser-tag">Sinh viên</span>
+                                    </div>
+                                </div>
+                                <div class="enduser-tile">
+                                    <div class="enduser-header">
+                                        <div class="enduser-icon">GV</div>
+                                        <div class="enduser-title">Trang Giáo viên</div>
+                                    </div>
+                                    <div class="enduser-desc">Lớp phụ trách · điểm danh/đánh giá · nhập điểm · tương tác học tập.</div>
+                                    <div class="enduser-tags">
+                                        <span class="enduser-tag">Giảng viên</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
