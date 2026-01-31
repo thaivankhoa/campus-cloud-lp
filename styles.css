@@ -1028,14 +1028,21 @@ body {
 }
 
 /* Organization Chart */
+.org-system-section {
+    margin: 4rem 0;
+    padding: 3rem 0;
+}
+
 .org-chart-wrapper {
     background: var(--bg-white);
     padding: 2rem;
     border-radius: var(--radius);
     border: 1px solid var(--border-color);
-    box-shadow: var(--shadow);
-    margin-top: 0;
-    background: linear-gradient(180deg, #ffffff 0%, #fef2f2 100%);
+    box-shadow: 0 4px 16px rgba(208, 65, 44, 0.08);
+    margin-top: 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .org-chart {
