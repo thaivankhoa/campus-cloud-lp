@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Cloud - Giải pháp quản lý giáo dục</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
 </head>
 <body>
     <!-- Header -->
@@ -38,11 +38,10 @@
                 <ul class="nav-menu">
                     <li><a href="#tong-quan">Tổng quan</a></li>
                     <li><a href="#modules">Các module</a></li>
-                    <li><a href="#roadmap">Roadmap</a></li>
                     <li><a href="#doi-ngu">Đội ngũ</a></li>
                     <li><a href="#tech-stack">Tech stack</a></li>
                     <li><a href="#chi-phi">Chi phí</a></li>
-                    <li><a href="#lien-ket">Liên kết</a></li>
+                    <li><a href="#demo">Demo</a></li>
                     <li><a href="#lien-he">Liên hệ</a></li>
                 </ul>
             </div>
@@ -108,53 +107,10 @@
                 </div>
             </div>
 
-            <!-- III: Ưu điểm - tại sao nên dùng -->
+            <!-- 3. Tổ chức hệ thống -->
             <div class="content-block">
                 <div class="info-card">
-                    <div class="card-header">III/ ƯU ĐIỂM - TẠI SAO NÊN DÙNG</div>
-                    <div class="card-body">
-                        <p class="muted-text" style="margin:0 0 12px 0; font-weight:750;">Nội dung sẽ được cập nhật sau.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- IV: Demo -->
-            <div id="demo-overview" class="content-block">
-                <div class="info-card">
-                    <div class="card-header">IV/ DEMO</div>
-                    <div class="card-body">
-                        <div class="demo-video-wrapper">
-                            <p class="muted-text" style="margin:0 0 12px 0; font-weight:750;">Youtube video</p>
-                            <div class="video-placeholder">
-                                <p style="text-align: center; color: var(--text-light); padding: 2rem;">Video sẽ được cập nhật sau</p>
-                            </div>
-                        </div>
-                        <div class="demo-links-inline" style="margin-top: 1.5rem;">
-                            <a href="http://tuyensinh.campuscloud.io.vn/" target="_blank" rel="noopener noreferrer" class="demo-link-inline">
-                                <div class="demo-link-icon">🌐</div>
-                                <div class="demo-link-content">
-                                    <div class="demo-link-title">Trang Tuyển sinh</div>
-                                    <div class="demo-link-url">tuyensinh.campuscloud.io.vn</div>
-                                </div>
-                                <div class="demo-link-arrow">→</div>
-                            </a>
-                            <a href="http://staff.campuscloud.io.vn/" target="_blank" rel="noopener noreferrer" class="demo-link-inline">
-                                <div class="demo-link-icon">👥</div>
-                                <div class="demo-link-content">
-                                    <div class="demo-link-title">Trang Staff</div>
-                                    <div class="demo-link-url">staff.campuscloud.io.vn</div>
-                                </div>
-                                <div class="demo-link-arrow">→</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- V: Tổ chức hệ thống -->
-            <div class="content-block">
-                <div class="info-card">
-                    <div class="card-header">V/ TỔ CHỨC HỆ THỐNG (SƠ ĐỒ 3 CẤP)</div>
+                    <div class="card-header">III/ TỔ CHỨC HỆ THỐNG (SƠ ĐỒ 3 CẤP)</div>
                     <div class="card-body" style="padding: 0;">
                         <div class="org-chart-wrapper">
                             <div class="org-chart">
@@ -290,10 +246,48 @@
                     </div>
                 </div>
 
+            <!-- 4. Các dịch vụ tích hợp và kênh thanh toán -->
+            <div class="content-block">
+                <div class="cards-grid">
+                    <!-- Card IV: Dịch vụ tích hợp -->
+                    <div class="info-card">
+                        <div class="card-header">IV/ CÁC DỊCH VỤ TÍCH HỢP</div>
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Học trực tuyến:</strong> Google Meet, Zoom (phục vụ giảng dạy – học trực tuyến)</li>
+                                <li><strong>SMS / OTP:</strong> Zalo, Authy (có thể mở rộng nhà cung cấp)</li>
+                            </ul>
+                            <div class="pill-row" style="margin-top:12px;">
+                                <span class="pill">SSO (tuỳ chọn)</span>
+                                <span class="pill">Webhook / API Integration</span>
+                                <span class="pill">Audit log</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card V: Kênh thanh toán -->
+                    <div class="info-card">
+                        <div class="card-header">V/ KÊNH THANH TOÁN</div>
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Ngân hàng:</strong> VCB / ACB (mở rộng thêm theo nhu cầu)</li>
+                                <li><strong>Ví điện tử:</strong> MoMo</li>
+                                <li><strong>Khác:</strong> có thể tích hợp thêm cổng thanh toán/đối soát</li>
+                            </ul>
+                            <p class="muted-text" style="margin:12px 0 0 0; font-size:12px; font-weight:650;">
+                                Gợi ý: phần này có thể bổ sung danh sách đối tác theo từng gói triển khai.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </section>
 
+    <!-- Chi tiết các module -->
+    <section class="section module-details">
+        <div class="container">
     <!-- Phần B: Các module trong hệ thống -->
     <section id="modules" class="section modules">
         <div class="container">
@@ -301,184 +295,140 @@
                 <h2 class="section-title">B. CÁC MODULE TRONG HỆ THỐNG</h2>
             </div>
 
-            <!-- I: Mục lục -->
             <div class="module-toc-wrapper">
                 <div class="module-toc-header">
-                    <span class="toc-title">I/ MỤC LỤC</span>
+                    <span class="toc-title">MỤC LỤC</span>
                 </div>
                 
                 <div class="module-toc-list">
-                    <a href="#module-i" class="module-toc-item">
-                        <span class="toc-module-name">I/ TÀI CHÍNH - HỌC VỤ</span>
-                        <span class="toc-departments">
-                            <span class="toc-dept-badge">Phòng kế toán</span>
+                    <a href="#module-1-1" class="module-toc-item">
+                        <span class="toc-module-name">1.1 Module tuyển sinh trực tuyến</span>
+                        <span class="toc-phase-badges">
+                            <span class="toc-badge demo">Demo</span>
+                            <span class="toc-badge phase">Phase 1</span>
                         </span>
                     </a>
-                    <a href="#module-ii" class="module-toc-item">
-                        <span class="toc-module-name">II/ CHƯƠNG TRÌNH ĐÀO TẠO</span>
-                        <span class="toc-departments">
-                            <span class="toc-dept-badge">Phòng đào tạo</span>
+                    <a href="#module-1-2" class="module-toc-item">
+                        <span class="toc-module-name">1.2 Module Nhập học trực tuyến</span>
+                        <span class="toc-phase-badges">
+                            <span class="toc-badge phase">Phase 1</span>
                         </span>
                     </a>
-                    <div class="module-toc-item-wrapper">
-                        <span class="toc-module-name">III/ TUYỂN SINH - NHẬP HỌC TRỰC TUYẾN</span>
-                        <span class="toc-departments">
-                            <a href="#demo-overview" class="toc-dept-badge demo">Xem Demo</a>
-                            <span class="toc-dept-badge">Trang tuyển sinh</span>
-                            <span class="toc-dept-badge">Phòng Tuyển sinh</span>
-                            <span class="toc-dept-badge">Trang sinh viên</span>
-                        </span>
-                    </div>
-                    <a href="#module-iv" class="module-toc-item">
-                        <span class="toc-module-name">IV/ TRANG QUẢN LÝ LỚP HỌC - SINH VIÊN - GIẢNG VIÊN</span>
-                        <span class="toc-departments">
-                            <span class="toc-dept-badge">Phòng đào tạo</span>
+                    <a href="#module-1-3" class="module-toc-item">
+                        <span class="toc-module-name">1.3 Chương trình đào tạo</span>
+                        <span class="toc-phase-badges">
+                            <span class="toc-badge phase">Phase 2</span>
                         </span>
                     </a>
-                    <a href="#module-v" class="module-toc-item">
-                        <span class="toc-module-name">V/ THỜI KHÓA BIỂU - LỊCH THI</span>
-                        <span class="toc-departments">
-                            <span class="toc-dept-badge">Phòng đào tạo</span>
+                    <a href="#module-1-4" class="module-toc-item">
+                        <span class="toc-module-name">1.4 Quản lý sinh viên - lớp học</span>
+                        <span class="toc-phase-badges">
+                            <span class="toc-badge phase">Phase 2</span>
                         </span>
                     </a>
-                    <a href="#module-vi" class="module-toc-item">
-                        <span class="toc-module-name">VI/ QUẢN LÝ HỌC VỤ, ĐIỂM</span>
-                        <span class="toc-departments">
-                            <span class="toc-dept-badge">Phòng đào tạo</span>
-                        </span>
+                    <a href="#module-1-5" class="module-toc-item">
+                        <span class="toc-module-name">1.5 Thời khóa biểu, lịch thi và tổ chức thi tập trung</span>
                     </a>
-                    <a href="#module-vii" class="module-toc-item">
-                        <span class="toc-module-name">VII/ TRANG SINH VIÊN</span>
-                        <span class="toc-departments">
-                            <span class="toc-dept-badge">Trang sinh viên</span>
-                        </span>
+                    <a href="#module-1-6" class="module-toc-item">
+                        <span class="toc-module-name">1.6 Quản lý học vụ (Điểm và rèn luyện)</span>
                     </a>
-                    <a href="#module-viii" class="module-toc-item">
-                        <span class="toc-module-name">VIII/ TRANG GIẢNG VIÊN</span>
-                        <span class="toc-departments">
-                            <span class="toc-dept-badge">Trang giảng viên</span>
-                        </span>
+                    <a href="#module-1-7" class="module-toc-item">
+                        <span class="toc-module-name">1.7 Tài chính học vụ</span>
+                    </a>
+                    <a href="#module-1-8" class="module-toc-item">
+                        <span class="toc-module-name">1.8 Thanh toán trực tuyến, hóa đơn điện tử</span>
+                    </a>
+                    <a href="#module-1-9" class="module-toc-item">
+                        <span class="toc-module-name">1.9 Trang sinh viên</span>
+                    </a>
+                    <a href="#module-1-10" class="module-toc-item">
+                        <span class="toc-module-name">1.10 Trang giảng viên</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- II: Chi tiết module -->
+    <!-- Phần 2: Chi tiết module -->
     <section class="section module-details">
         <div class="container">
-            <div class="section-header" style="margin-bottom: 2rem;">
-                <h2 class="section-title" style="font-size: 1.75rem;">II/ CHI TIẾT</h2>
-            </div>
-            <!-- Module I: Tài Chính - Học vụ -->
-            <div id="module-i" class="module-detail-section">
+            <div id="module-1-1" class="module-detail-section">
                 <div class="info-card">
-                    <div class="card-header">
-                        <span>I/ TÀI CHÍNH - HỌC VỤ</span>
-                        <span class="card-header-badges">
-                            <span class="header-dept-badge">Phòng kế toán</span>
-                        </span>
-                    </div>
+                    <div class="card-header">1.1. MODULE TUYỂN SINH TRỰC TUYẾN</div>
                     <div class="card-body">
-                        <div class="module-features">
-                            <div class="feature-group">
-                                <h5 class="feature-role">1/ Trang tổng hợp</h5>
-                            </div>
-
-                            <div class="feature-group">
-                                <h5 class="feature-role">2/ Quản lý lệ phí xét tuyển các hệ</h5>
-                                <ul>
-                                    <li>Lệ phí xét tuyển cao đẳng</li>
-                                </ul>
-                            </div>
-
-                            <div class="feature-group">
-                                <h5 class="feature-role">3/ Quản lý học phí</h5>
-                                <ul>
-                                    <li>Lập kế hoạch thu học phí</li>
-                                    <li>Thu học phí qua ngân hàng / momo …, hóa đơn điện tử</li>
-                                    <li>Danh sách nợ học phí</li>
-                                    <li>Danh sách miễn - giảm học phí</li>
-                                    <li>Báo cáo thu chi</li>
-                                </ul>
-                            </div>
-
-                            <div class="feature-group">
-                                <h5 class="feature-role">4/ Các khoản thu khác</h5>
-                            </div>
+                        <div class="module-purpose">
+                            <h4 class="purpose-title">Mục đích</h4>
+                            <p>Cho phép thí sinh đăng ký và ghi danh tham gia khóa học. Module này dùng để quản lý dữ liệu đầu vào cho tuyển sinh.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Module II: Chương trình đào tạo -->
-            <div id="module-ii" class="module-detail-section">
-                <div class="info-card">
-                    <div class="card-header">
-                        <span>II/ CHƯƠNG TRÌNH ĐÀO TẠO</span>
-                        <span class="card-header-badges">
-                            <span class="header-dept-badge">Phòng đào tạo</span>
-                        </span>
-                    </div>
-                    <div class="card-body">
                         <div class="module-features">
-                            <ul>
-                                <li>Hỗ trợ nhà trường xây dựng chương trình đào tạo theo cấp bậc: Cấp Độ Đào Tạo, Số môn học, số tiết học trong từng môn, thời gian học, thể thức thi</li>
-                                <li>Khảo sát đào tạo</li>
-                                <li>Ngân hàng đề thi</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Module III: Tuyển sinh - Nhập học trực tuyến -->
-            <div id="module-iii" class="module-detail-section">
-                <div class="info-card">
-                    <div class="card-header">
-                        <span>III/ TUYỂN SINH - NHẬP HỌC TRỰC TUYẾN</span>
-                        <span class="card-header-badges">
-                            <span class="header-dept-badge">Trang tuyển sinh</span>
-                            <span class="header-dept-badge">Phòng Tuyển sinh</span>
-                            <span class="header-dept-badge">Trang sinh viên</span>
-                            <a href="#demo-overview" class="header-demo-badge"> Xem Demo </a>
-                        </span>
-                    </div>
-                    <div class="card-body">
-                        <div class="module-features">
+                            <h4 class="features-title">Tính năng chính</h4>
+                            
                             <div class="feature-group">
-                                <h5 class="feature-role">1/ Trang tuyển sinh:</h5>
+                                <h5 class="feature-role">Tuyển sinh</h5>
                                 <ul>
-                                    <li>Đăng ký tuyển sinh online, xác nhận hồ sơ</li>
-                                    <li>Đăng nhập vào hệ thống người ứng tuyển:
-                                        <ul class="sub-features">
-                                            <li>Cập nhật hồ sơ online</li>
-                                            <li>Theo dõi hồ sơ, nhận thông báo</li>
-                                            <li>Đóng lệ phí xét tuyển</li>
-                                        </ul>
-                                    </li>
+                                    <li>Đăng ký xét tuyển/nộp hồ sơ</li>
+                                    <li>Nộp lệ phí trực tuyến</li>
+                                    <li>Theo dõi hồ sơ xét tuyển</li>
+                                    <li>Nhận thông báo tuyển sinh</li>
                                 </ul>
                             </div>
 
                             <div class="feature-group">
-                                <h5 class="feature-role">2/ Phòng tuyển sinh:</h5>
+                                <h5 class="feature-role">Giáo vụ</h5>
                                 <ul>
-                                    <li>Trang thống kê</li>
-                                    <li>Quản lý danh sách người ứng tuyển</li>
+                                    <li>Quản lý chương trình xét tuyển</li>
                                     <li>Quản lý hồ sơ xét tuyển:
                                         <ul class="sub-features">
-                                            <li>Quản lý, cập nhật, xét duyệt hồ sơ</li>
+                                            <li>Tạo mới</li>
+                                            <li>Xem</li>
+                                            <li>Chỉnh sửa</li>
+                                            <li>Xoá</li>
                                         </ul>
                                     </li>
+                                    <li>Tác vụ xét tuyển:
+                                        <ul class="sub-features">
+                                            <li>Duyệt</li>
+                                            <li>Thu hồi</li>
+                                            <li>Từ chối</li>
+                                        </ul>
+                                    </li>
+                                    <li>Gửi quyết định trúng tuyển</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 1.2 -->
+            <div id="module-1-2" class="module-detail-section">
+                <div class="info-card">
+                    <div class="card-header">1.2. MODULE NHẬP HỌC TRỰC TUYẾN</div>
+                    <div class="card-body">
+                        <div class="module-purpose">
+                            <h4 class="purpose-title">Mục đích</h4>
+                            <p>Cho phép các thí sinh trúng tuyển làm các thủ tục nhập học. Các sinh viên của từng khoá học được cung cấp mã số sinh viên để bắt đầu nộp hồ sơ và cập nhật thông tin.</p>
+                        </div>
+
+                        <div class="module-features">
+                            <h4 class="features-title">Tính năng chính</h4>
+                            
+                            <div class="feature-group">
+                                <h5 class="feature-role">Giáo vụ</h5>
+                                <ul>
+                                    <li>Quản lý sinh viên nhập học theo khoá học</li>
+                                    <li>Quản lý và hoàn thành thủ tục nhập học của sinh viên</li>
                                 </ul>
                             </div>
 
                             <div class="feature-group">
-                                <h5 class="feature-role">3/ Trang sinh viên:</h5>
+                                <h5 class="feature-role">Sinh viên</h5>
                                 <ul>
                                     <li>Thủ tục nhập học trực tuyến</li>
-                                    <li>Đóng học phí trực tuyến</li>
-                                    <li>Sinh viên theo dõi thông tin trên cổng sinh viên</li>
+                                    <li>Đăng nhập bằng tài khoản gắn liền với mã sinh viên</li>
+                                    <li>Hoàn thành hồ sơ nhập học (trực tuyến)</li>
+                                    <li>Nộp học phí (trực tuyến)</li>
                                 </ul>
                             </div>
                         </div>
@@ -486,245 +436,93 @@
                 </div>
             </div>
 
-            <!-- Module IV: Trang quản lý lớp học - sinh viên - Giảng viên -->
-            <div id="module-iv" class="module-detail-section">
+            <!-- Module 1.3 -->
+            <div id="module-1-3" class="module-detail-section">
                 <div class="info-card">
-                    <div class="card-header">
-                        <span>IV/ TRANG QUẢN LÝ LỚP HỌC - SINH VIÊN - GIẢNG VIÊN</span>
-                        <span class="card-header-badges">
-                            <span class="header-dept-badge">Phòng đào tạo</span>
-                        </span>
-                    </div>
+                    <div class="card-header">1.3. CHƯƠNG TRÌNH ĐÀO TẠO</div>
                     <div class="card-body">
-                        <div class="module-features">
-                            <div class="feature-group">
-                                <h5 class="feature-role">1/ Quản lý sinh viên</h5>
-                                <ul>
-                                    <li>Thông tin sinh viên, quan hệ gia đình</li>
-                                    <li>Thông tin tuyển sinh đầu vào, hồ sơ đã nộp</li>
-                                    <li>Các môn học đang tham gia</li>
-                                    <li>Các lớp học đang tham gia</li>
-                                    <li>Kết quả học tập</li>
-                                    <li>Thông tin học phí, miễn giảm</li>
-                                    <li>Học bổng, khen thưởng, xử lý học vụ</li>
-                                </ul>
-                            </div>
-
-                            <div class="feature-group">
-                                <h5 class="feature-role">2/ Quản lý giảng viên</h5>
-                                <ul>
-                                    <li>Thông tin giảng viên</li>
-                                    <li>Các lớp đang giảng dạy</li>
-                                </ul>
-                            </div>
-
-                            <div class="feature-group">
-                                <h5 class="feature-role">3/ Quản lý lớp học</h5>
-                                <ul>
-                                    <li>Quản lý danh sách sinh viên trong lớp</li>
-                                    <li>Quản lý danh sách giảng viên đứng lớp</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <p class="muted-text">Nội dung chi tiết sẽ được cập nhật sau.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Module V: Thời khóa biểu - lịch thi -->
-            <div id="module-v" class="module-detail-section">
+            <!-- Module 1.4 -->
+            <div id="module-1-4" class="module-detail-section">
                 <div class="info-card">
-                    <div class="card-header">
-                        <span>V/ THỜI KHÓA BIỂU - LỊCH THI</span>
-                        <span class="card-header-badges">
-                            <span class="header-dept-badge">Phòng đào tạo</span>
-                        </span>
-                    </div>
+                    <div class="card-header">1.4. QUẢN LÝ SINH VIÊN - LỚP HỌC</div>
                     <div class="card-body">
-                        <div class="module-features">
-                            <div class="feature-group">
-                                <h5 class="feature-role">1/ TKB:</h5>
-                                <ul>
-                                    <li>Xây dựng lịch học</li>
-                                    <li>Xếp lịch học cho sinh viên</li>
-                                    <li>Xếp lịch giảng dạy cho giảng viên</li>
-                                    <li>Tịnh tiến lịch học trong các TH dời lịch</li>
-                                </ul>
-                            </div>
-
-                            <div class="feature-group">
-                                <h5 class="feature-role">2/ Lịch thi - Tạo đợt thi</h5>
-                                <ul>
-                                    <li>Phân công giảng viên coi thi</li>
-                                    <li>Trộn danh sách dự thi</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <p class="muted-text">Nội dung chi tiết sẽ được cập nhật sau.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Module VI: Quản lý học vụ, điểm -->
-            <div id="module-vi" class="module-detail-section">
+            <!-- Module 1.5 -->
+            <div id="module-1-5" class="module-detail-section">
                 <div class="info-card">
-                    <div class="card-header">
-                        <span>VI/ QUẢN LÝ HỌC VỤ, ĐIỂM</span>
-                        <span class="card-header-badges">
-                            <span class="header-dept-badge">Phòng đào tạo</span>
-                        </span>
-                    </div>
+                    <div class="card-header">1.5. THỜI KHÓA BIỂU, LỊCH THI VÀ TỔ CHỨC THI TẬP TRUNG</div>
                     <div class="card-body">
-                        <div class="module-features">
-                            <ul>
-                                <li>Nhập điểm quá trình, xét điều kiện dự thi</li>
-                                <li>Nhập điểm kết thúc</li>
-                                <li>Đề xuất sửa điểm trực tuyến</li>
-                                <li>Theo dõi và quản lý bảng điểm cho giảng viên gửi lên</li>
-                            </ul>
-                        </div>
+                        <p class="muted-text">Nội dung chi tiết sẽ được cập nhật sau.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Module VII: Trang sinh viên -->
-            <div id="module-vii" class="module-detail-section">
+            <!-- Module 1.6 -->
+            <div id="module-1-6" class="module-detail-section">
                 <div class="info-card">
-                    <div class="card-header">
-                        <span>VII/ TRANG SINH VIÊN</span>
-                        <span class="card-header-badges">
-                            <span class="header-dept-badge">Trang sinh viên</span>
-                        </span>
-                    </div>
+                    <div class="card-header">1.6. QUẢN LÝ HỌC VỤ (ĐIỂM VÀ RÈN LUYỆN)</div>
                     <div class="card-body">
-                        <div class="module-features">
-                            <ul>
-                                <li>Thông tin sinh viên, quan hệ gia đình</li>
-                                <li>Thông tin tuyển sinh đầu vào, hồ sơ đã nộp</li>
-                                <li>Các môn học đang tham gia</li>
-                                <li>Các lớp học đang tham gia</li>
-                                <li>Kết quả học tập</li>
-                                <li>Thông tin học phí, miễn giảm</li>
-                                <li>Học bổng, khen thưởng, xử lý học vụ</li>
-                                <li>Thủ tục nhập học trực tuyến</li>
-                                <li>Đóng học phí trực tuyến</li>
-                                <li>Sinh viên theo dõi thông tin trên cổng sinh viên</li>
-                                <li>Thời khóa biểu - lịch thi</li>
-                                <li>Bảng tin của trường …</li>
-                            </ul>
-                        </div>
+                        <p class="muted-text">Nội dung chi tiết sẽ được cập nhật sau.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Module VIII: Trang giảng viên -->
-            <div id="module-viii" class="module-detail-section">
+            <!-- Module 1.7 -->
+            <div id="module-1-7" class="module-detail-section">
                 <div class="info-card">
-                    <div class="card-header">
-                        <span>VIII/ TRANG GIẢNG VIÊN</span>
-                        <span class="card-header-badges">
-                            <span class="header-dept-badge">Trang giảng viên</span>
-                        </span>
-                    </div>
+                    <div class="card-header">1.7. TÀI CHÍNH HỌC VỤ</div>
                     <div class="card-body">
-                        <div class="module-features">
-                            <ul>
-                                <li>Thông tin giảng viên</li>
-                                <li>Lịch giảng dạy</li>
-                                <li>Quản lý các lớp giảng dạy</li>
-                                <li>Nhập điểm quá trình</li>
-                                <li>Nhập điểm thi</li>
-                            </ul>
-                        </div>
+                        <p class="muted-text">Nội dung chi tiết sẽ được cập nhật sau.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 1.8 -->
+            <div id="module-1-8" class="module-detail-section">
+                <div class="info-card">
+                    <div class="card-header">1.8. THANH TOÁN TRỰC TUYẾN, HÓA ĐƠN ĐIỆN TỬ</div>
+                    <div class="card-body">
+                        <p class="muted-text">Nội dung chi tiết sẽ được cập nhật sau.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 1.9 -->
+            <div id="module-1-9" class="module-detail-section">
+                <div class="info-card">
+                    <div class="card-header">1.9. TRANG SINH VIÊN</div>
+                    <div class="card-body">
+                        <p class="muted-text">Nội dung chi tiết sẽ được cập nhật sau.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 1.10 -->
+            <div id="module-1-10" class="module-detail-section">
+                <div class="info-card">
+                    <div class="card-header">1.10. TRANG GIẢNG VIÊN</div>
+                    <div class="card-body">
+                        <p class="muted-text">Nội dung chi tiết sẽ được cập nhật sau.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Phần C: Roadmap -->
-    <section id="roadmap" class="section roadmap-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">C. ROADMAP - KẾ HOẠCH TRIỂN KHAI</h2>
-            </div>
-
-            <div class="roadmap-container">
-                <!-- GĐ 1.1 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 1.1</div>
-                        <div class="phase-line"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Tài chính - học vụ, tích hợp thanh toán, xuất hóa đơn</li>
-                            <li>Chương trình đào tạo</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- GĐ 1.2 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 1.2</div>
-                        <div class="phase-line"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Tuyển sinh</li>
-                            <li>Nhập học</li>
-                            <li>Quản lý sinh viên lớp học</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- GĐ 2 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 2</div>
-                        <div class="phase-line"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Thời khóa biểu - lịch thi</li>
-                            <li>Điểm số - giáo vụ - điểm rèn luyện - kqht</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- GĐ 3 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 3</div>
-                        <div class="phase-line"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Trang sinh viên</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- GĐ 4 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 4</div>
-                        <div class="phase-line phase-line-last"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Trang giảng viên</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Phần D: Đội ngũ -->
+    <!-- Phần C: Đội ngũ -->
     <section id="doi-ngu" class="section team-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">D. ĐỘI NGŨ</h2>
+                <h2 class="section-title">C. ĐỘI NGŨ</h2>
             </div>
 
             <div class="team-grid">
@@ -760,11 +558,11 @@
         </div>
     </section>
 
-    <!-- Phần E: Tech stack -->
+    <!-- Phần D: Tech stack -->
     <section id="tech-stack" class="section tech-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">E. TECH STACK</h2>
+                <h2 class="section-title">D. TECH STACK</h2>
             </div>
 
             <div class="tech-grid">
@@ -813,26 +611,15 @@
         </div>
     </section>
 
-    <!-- Phần F: Chi phí -->
+    <!-- Phần E: Chi phí duy trì -->
     <section id="chi-phi" class="section cost-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">F. CHI PHÍ</h2>
+                <h2 class="section-title">E. CHI PHÍ DUY TRÌ HỆ THỐNG</h2>
             </div>
 
-            <!-- I: Chi phí phát triển -->
-            <div class="info-card" style="margin-bottom: var(--gap);">
-                <div class="card-header">I/ CHI PHÍ PHÁT TRIỂN</div>
-                <div class="card-body">
-                    <p class="muted-text" style="margin:0 0 8px 0; font-weight:750;">Nội dung sẽ được cập nhật sau.</p>
-                </div>
-            </div>
-
-            <!-- II: Chi phí duy trì -->
             <div class="info-card">
-                <div class="card-header">II/ CHI PHÍ DUY TRÌ HỆ THỐNG</div>
-                <div class="card-body">
-                    <p class="muted-text" style="margin:0 0 12px 0; font-weight:750;">Chi phí mà trường sẽ phải trả để duy trì hệ thống</p>
+                <div class="card-header">Chi phí mà trường sẽ phải trả để duy trì hệ thống</div>
                 <div class="card-body">
                     <ul class="cost-list">
                         <li>
@@ -873,11 +660,11 @@
         </div>
     </section>
 
-    <!-- Phần G: Các liên kết -->
-    <section id="lien-ket" class="section links-section">
+    <!-- Phần F: Demo -->
+    <section id="demo" class="section demo-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">G. CÁC LIÊN KẾT</h2>
+                <h2 class="section-title">F. DEMO</h2>
             </div>
 
             <div class="demo-links">
@@ -920,7 +707,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
 </body>
 </html>
 

@@ -2,12 +2,43 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
+        e.stopPropagation(); // Prevent event bubbling
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
+        }
+    });
+});
+
+// Handle click on module name in TOC to scroll to module detail
+document.querySelectorAll('.module-toc-item-wrapper .toc-module-name').forEach(nameEl => {
+    nameEl.style.cursor = 'pointer';
+    nameEl.addEventListener('click', function() {
+        const moduleNum = this.textContent.match(/[IVX]+/)?.[0];
+        if (moduleNum) {
+            const moduleMap = {
+                'I': 'module-i',
+                'II': 'module-ii',
+                'III': 'module-iii',
+                'IV': 'module-iv',
+                'V': 'module-v',
+                'VI': 'module-vi',
+                'VII': 'module-vii',
+                'VIII': 'module-viii'
+            };
+            const targetId = moduleMap[moduleNum];
+            if (targetId) {
+                const target = document.querySelector(`#${targetId}`);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
         }
     });
 });
@@ -34,4 +65,6 @@ document.querySelectorAll('.content-block, .subsection').forEach(el => {
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
+
+
 
