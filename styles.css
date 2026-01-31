@@ -169,6 +169,372 @@ body {
     background: var(--bg-light);
 }
 
+/* Intro Hero Section */
+.intro-hero {
+    text-align: center;
+    padding: 4rem 0 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.intro-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.intro-description strong {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.feature-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.feature-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(208, 65, 44, 0.08);
+}
+
+.feature-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(208, 65, 44, 0.15);
+    border-color: var(--primary-color);
+}
+
+.feature-tag i {
+    font-size: 0.9rem;
+}
+
+/* Users & Platform Section */
+.users-platform-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 4rem 0;
+    padding: 3rem;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-subtitle i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: var(--radius2);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(208, 65, 44, 0.1);
+    border-color: var(--primary-color);
+}
+
+.user-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border-radius: 14px;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.user-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.platform-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.platform-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius2);
+    transition: all 0.3s;
+}
+
+.platform-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(208, 65, 44, 0.1);
+}
+
+.platform-card.primary {
+    background: linear-gradient(135deg, var(--primary-light-bg) 0%, #fff 100%);
+    border-color: var(--primary-color);
+}
+
+.platform-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.platform-info {
+    flex: 1;
+}
+
+.platform-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.platform-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.platform-badge.optional {
+    background: var(--text-light);
+}
+
+/* Benefits Section */
+.benefits-section {
+    margin: 4rem 0;
+    padding: 3rem 0;
+}
+
+.section-header-center {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title-center {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+/* Demo Section */
+.demo-section {
+    margin: 4rem 0;
+    padding: 3rem 0;
+}
+
+.demo-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.demo-video-wrapper {
+    margin-bottom: 2.5rem;
+}
+
+.video-placeholder {
+    background: linear-gradient(135deg, var(--bg-light) 0%, #fff 100%);
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius);
+    padding: 4rem 2rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.video-placeholder:hover {
+    border-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-light-bg) 0%, #fff 100%);
+}
+
+.video-placeholder i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.video-placeholder p {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.demo-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.demo-link-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius2);
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(208, 65, 44, 0.08);
+}
+
+.demo-link-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(208, 65, 44, 0.15);
+    border-color: var(--primary-color);
+    text-decoration: none;
+}
+
+.demo-link-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border-radius: 14px;
+    color: #fff;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.demo-link-content {
+    flex: 1;
+}
+
+.demo-link-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.demo-link-url {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.demo-link-arrow {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    transition: transform 0.3s;
+}
+
+.demo-link-card:hover .demo-link-arrow {
+    transform: translateX(4px);
+}
+
+@media (max-width: 920px) {
+    .users-platform-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .intro-title {
+        font-size: 2rem;
+    }
+
+    .intro-description {
+        font-size: 1rem;
+    }
+
+    .section-title-center {
+        font-size: 1.75rem;
+    }
+
+    .demo-links-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-hero {
+        padding: 2rem 0;
+    }
+
+    .users-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-section,
+    .demo-section {
+        margin: 2rem 0;
+        padding: 2rem 0;
+    }
+}
+
 /* Cards Grid Layout */
 .cards-grid {
     display: grid;
@@ -289,16 +655,20 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-top: 1rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .benefit-card {
-    background: linear-gradient(135deg, #ffffff 0%, #fef2f2 100%);
+    background: #fff;
     border: 1px solid var(--border-color);
     border-radius: var(--radius2);
-    padding: 1.5rem;
+    padding: 1.75rem;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 2px 8px rgba(208, 65, 44, 0.06);
 }
 
 .benefit-card::before {
@@ -325,6 +695,7 @@ body {
 
 .benefit-card-wide {
     grid-column: 1 / -1;
+    background: linear-gradient(135deg, #fff 0%, var(--primary-light-bg) 100%);
 }
 
 .benefit-icon {
