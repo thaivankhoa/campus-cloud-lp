@@ -1344,25 +1344,18 @@ body {
     background: var(--bg-light);
 }
 
-.module-toc-wrapper {
-    background: var(--bg-white);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    overflow: hidden;
-    max-width: 900px;
-    margin: 0 auto;
+.module-toc-section {
+    margin: 3rem 0;
 }
 
-.module-toc-header {
-    background: var(--primary-color);
-    color: white;
-    padding: 14px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 15px;
-    border-radius: var(--radius) var(--radius) 0 0;
+.module-toc-container {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 16px rgba(208, 65, 44, 0.08);
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
 }
 
 .toc-part {
@@ -1376,7 +1369,7 @@ body {
 }
 
 .module-toc-list {
-    padding: 0;
+    padding: 1.5rem;
 }
 
 .module-toc-item-wrapper {
