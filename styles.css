@@ -283,6 +283,115 @@ body {
     font-weight: 650;
 }
 
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.benefit-card {
+    background: linear-gradient(135deg, #ffffff 0%, #fef2f2 100%);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius2);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(208, 65, 44, 0.15);
+    border-color: var(--primary-color);
+}
+
+.benefit-card:hover::before {
+    opacity: 1;
+}
+
+.benefit-card-wide {
+    grid-column: 1 / -1;
+}
+
+.benefit-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.75rem;
+    box-shadow: 0 4px 12px rgba(208, 65, 44, 0.2);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 16px rgba(208, 65, 44, 0.3);
+}
+
+.benefit-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.benefit-desc {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .benefit-card-wide {
+        grid-column: 1;
+    }
+
+    .benefit-card {
+        padding: 1.25rem;
+    }
+
+    .benefit-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .benefit-title {
+        font-size: 1rem;
+    }
+
+    .benefit-desc {
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 920px) {
     .cards-grid {
         grid-template-columns: 1fr;
