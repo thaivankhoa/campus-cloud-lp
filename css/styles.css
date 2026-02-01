@@ -763,33 +763,109 @@ body {
 
 .demo-video-wrapper {
     margin-bottom: 2.5rem;
-}
-
-.video-placeholder {
-    background: linear-gradient(135deg, var(--bg-light) 0%, #fff 100%);
-    border: 2px dashed var(--border-color);
     border-radius: var(--radius);
-    padding: 4rem 2rem;
-    text-align: center;
-    transition: all 0.3s;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    background: #000;
 }
 
-.video-placeholder:hover {
-    border-color: var(--primary-color);
-    background: linear-gradient(135deg, var(--primary-light-bg) 0%, #fff 100%);
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
 }
 
-.video-placeholder i {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* YouTube Thumbnail Link (fallback if embed fails) */
+.youtube-thumbnail-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.youtube-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.youtube-thumbnail:hover {
+    transform: scale(1.02);
+}
+
+.youtube-thumbnail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
-.video-placeholder p {
-    color: var(--text-light);
-    font-size: 1rem;
+.youtube-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 0, 0, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.youtube-thumbnail:hover .youtube-play-button {
+    background: #ff0000;
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 8px 24px rgba(255, 0, 0, 0.4);
+}
+
+.youtube-play-button i {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 4px;
+}
+
+.youtube-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 1.5rem;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.youtube-thumbnail:hover .youtube-overlay {
+    opacity: 1;
+}
+
+.youtube-overlay p {
     margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .demo-links-grid {
