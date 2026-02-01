@@ -2844,7 +2844,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom right, 
+    background: linear-gradient(to bottom left, 
         transparent 0%, 
         transparent calc(50% - 1px), 
         var(--border-color) calc(50% - 1px), 
@@ -2852,14 +2852,13 @@ body {
         transparent calc(50% + 1px));
     pointer-events: none;
     z-index: 1;
-    transform-origin: top left;
 }
 
 
 .diagonal-text-bottom-left {
     position: absolute;
-    bottom: 8px;
-    left: 8px;
+    top: 8px;
+    right: 8px;
     font-weight: 700;
     font-size: 0.85rem;
     color: var(--text-dark);
@@ -2868,8 +2867,8 @@ body {
 
 .diagonal-text-top-right {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    bottom: 8px;
+    left: 8px;
     font-weight: 700;
     font-size: 0.85rem;
     color: var(--text-dark);
