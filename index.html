@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Cloud - Giải pháp quản lý giáo dục</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Header -->
@@ -95,6 +95,74 @@
                 </div>
             </div>
 
+            <!-- Screenshot Carousel with Modal -->
+            <div class="screenshot-carousel-section">
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-slides" id="screenshotCarousel">
+                            <div class="carousel-slide" data-index="0">
+                                <img src="images/screenshot1.jpg" alt="Campus Cloud Screenshot 1" class="carousel-image">
+                                <div class="carousel-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" data-index="1">
+                                <img src="images/screenshot2.jpg" alt="Campus Cloud Screenshot 2" class="carousel-image">
+                                <div class="carousel-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" data-index="2">
+                                <img src="images/screenshot3.jpg" alt="Campus Cloud Screenshot 3" class="carousel-image">
+                                <div class="carousel-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" data-index="3">
+                                <img src="images/screenshot4.jpg" alt="Campus Cloud Screenshot 4" class="carousel-image">
+                                <div class="carousel-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Popup -->
+            <div class="image-modal" id="imageModal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <button class="modal-close" id="modalClose" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="modal-nav modal-next" id="modalNext" aria-label="Next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="modal-image-wrapper">
+                        <img id="modalImage" src="" alt="Campus Cloud Screenshot" class="modal-image">
+                    </div>
+                    <div class="modal-counter">
+                        <span id="currentIndex">1</span> / <span id="totalImages">4</span>
+                    </div>
+                </div>
+            </div>
+
             <!-- II: Đối tượng sử dụng - Feature Grid -->
             <div class="users-platform-section">
                 <div class="users-section">
@@ -125,7 +193,7 @@
                             <div class="user-icon">
                                 <i class="fas fa-briefcase"></i>
                             </div>
-                            <div class="user-label">Cán bộ - Công nhân viên chức</div>
+                            <div class="user-label">Cán bộ - Phòng ban</div>
                         </div>
                     </div>
                 </div>
@@ -1152,7 +1220,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 
