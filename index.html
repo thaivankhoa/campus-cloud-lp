@@ -37,14 +37,12 @@
                     </div>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#tong-quan">Tổng quan</a></li>
-                    <li><a href="#modules">Các module</a></li>
-                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#tong-quan">Tổng Quan</a></li>
+                    <li><a href="#modules">Module</a></li>
+                    <li><a href="#roadmap">Kế hoạch</a></li>
                     <li><a href="#doi-ngu">Đội ngũ</a></li>
-                    <li><a href="#tech-stack">Tech stack</a></li>
-                    <li><a href="#chi-phi">Chi phí</a></li>
-                    <li><a href="#lien-ket">Liên kết</a></li>
-                    <li><a href="#lien-he">Liên hệ</a></li>
+                    <li><a href="#chi-phi">Chi Phí</a></li>
+                    <li><a href="#lien-he">Liên Hệ</a></li>
                 </ul>
             </div>
         </nav>
@@ -273,7 +271,7 @@
                     <div class="demo-video-wrapper">
                         <div class="video-container">
                             <iframe 
-                                src="https://www.youtube.com/embed/CXuilu9fXDs" 
+                                src="https://www.youtube.com/embed/tlvKUPPOMNI" 
                                 title="Campus Cloud Demo Video" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -949,77 +947,143 @@
     <section id="roadmap" class="section roadmap-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">C. ROADMAP - KẾ HOẠCH TRIỂN KHAI</h2>
+                <h2 class="section-title">Roadmap - Kế hoạch triển khai</h2>
             </div>
 
-            <div class="roadmap-container">
-                <!-- GĐ 1.1 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 1.1</div>
-                        <div class="phase-line"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Tài chính - học vụ, tích hợp thanh toán, xuất hóa đơn</li>
-                            <li>Chương trình đào tạo</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- GĐ 1.2 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 1.2</div>
-                        <div class="phase-line"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Tuyển sinh</li>
-                            <li>Nhập học</li>
-                            <li>Quản lý sinh viên lớp học</li>
-                        </ul>
+            <div class="gantt-container">
+                <div class="gantt-header">
+                    <div class="gantt-legend">
+                        <div class="legend-item">
+                            <span class="legend-color dev"></span>
+                            <span>Phát triển</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color test"></span>
+                            <span>Thử nghiệm và kiểm định</span>
+                        </div>
                     </div>
                 </div>
-
-                <!-- GĐ 2 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 2</div>
-                        <div class="phase-line"></div>
+                
+                <div class="gantt-wrapper">
+                    <div class="gantt-header-row">
+                        <div class="gantt-header-phase">Giai đoạn</div>
+                        <div class="gantt-header-diagonal-cell">
+                            <div class="header-diagonal">
+                                <span class="diagonal-text-bottom-left">Time line</span>
+                                <span class="diagonal-text-top-right">Chi Tiết</span>
+                            </div>
+                        </div>
+                        <div class="gantt-timeline-header">
+                            <div class="timeline-cell">0</div>
+                            <div class="timeline-cell">1.5</div>
+                            <div class="timeline-cell">3</div>
+                            <div class="timeline-cell">4.5</div>
+                            <div class="timeline-cell">5.5</div>
+                            <div class="timeline-cell">7.5</div>
+                            <div class="timeline-cell">8.5</div>
+                            <div class="timeline-cell">9</div>
+                            <div class="timeline-cell">10</div>
+                        </div>
                     </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Thời khóa biểu - lịch thi</li>
-                            <li>Điểm số - giáo vụ - điểm rèn luyện - kqht</li>
-                        </ul>
+                    
+                    <div class="gantt-content-wrapper">
+                        <div class="gantt-sidebar">
+                            <div class="gantt-row">GĐ 1.1</div>
+                            <div class="gantt-row">GĐ 1.2</div>
+                            <div class="gantt-row">GĐ 2</div>
+                            <div class="gantt-row">GĐ 3</div>
+                            <div class="gantt-row">GĐ 4</div>
+                        </div>
+                        
+                        <div class="gantt-chart">
+                            <div class="gantt-rows">
+                        
+                        <div class="gantt-rows">
+                            <!-- GĐ 1.1 -->
+                            <div class="gantt-row-content">
+                                <div class="gantt-modules">
+                                    <span class="module-badge">Tài Chính - Học Vụ</span>
+                                    <span class="module-badge">Chương Trình Đào Tạo</span>
+                                </div>
+                                <div class="gantt-bars">
+                                    <div class="gantt-bar dev" style="left: 0%; width: 15%;">
+                                        <span class="bar-text">1.5 tháng</span>
+                                    </div>
+                                    <div class="gantt-bar test" style="left: 15%; width: 15%;">
+                                        <span class="bar-text">1.5 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- GĐ 1.2 -->
+                            <div class="gantt-row-content">
+                                <div class="gantt-modules">
+                                    <span class="module-badge">Tuyển Sinh - Nhập Học</span>
+                                    <span class="module-badge">Quản Lý Lớp Học</span>
+                                </div>
+                                <div class="gantt-bars">
+                                    <div class="gantt-bar dev" style="left: 15%; width: 15%;">
+                                        <span class="bar-text">1.5 tháng</span>
+                                    </div>
+                                    <div class="gantt-bar test" style="left: 30%; width: 15%;">
+                                        <span class="bar-text">1.5 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- GĐ 2 -->
+                            <div class="gantt-row-content">
+                                <div class="gantt-modules">
+                                    <span class="module-badge">Thời Khóa Biểu - Lịch Thi</span>
+                                    <span class="module-badge">Điểm Số - Giáo Vụ</span>
+                                </div>
+                                <div class="gantt-bars">
+                                    <div class="gantt-bar dev" style="left: 30%; width: 25%;">
+                                        <span class="bar-text">2.5 tháng</span>
+                                    </div>
+                                    <div class="gantt-bar test" style="left: 55%; width: 20%;">
+                                        <span class="bar-text">2 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- GĐ 3 -->
+                            <div class="gantt-row-content">
+                                <div class="gantt-modules">
+                                    <span class="module-badge">Trang Sinh Viên</span>
+                                </div>
+                                <div class="gantt-bars">
+                                    <div class="gantt-bar dev" style="left: 55%; width: 20%;">
+                                        <span class="bar-text">2 tháng</span>
+                                    </div>
+                                    <div class="gantt-bar test" style="left: 75%; width: 10%;">
+                                        <span class="bar-text">1 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- GĐ 4 -->
+                            <div class="gantt-row-content">
+                                <div class="gantt-modules">
+                                    <span class="module-badge">Trang Giảng Viên</span>
+                                </div>
+                                <div class="gantt-bars">
+                                    <div class="gantt-bar dev" style="left: 75%; width: 15%;">
+                                        <span class="bar-text">1.5 tháng</span>
+                                    </div>
+                                    <div class="gantt-bar test" style="left: 90%; width: 10%;">
+                                        <span class="bar-text">1 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- GĐ 3 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 3</div>
-                        <div class="phase-line"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Trang sinh viên</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- GĐ 4 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 4</div>
-                        <div class="phase-line phase-line-last"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Trang giảng viên</li>
-                        </ul>
-                    </div>
+                
+                <div class="gantt-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Khi kết thúc 1 phase dev, QA sẽ bắt đầu test đồng thời dev chuyển sang giai đoạn tiếp theo</span>
                 </div>
             </div>
         </div>
@@ -1029,7 +1093,7 @@
     <section id="doi-ngu" class="section team-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">D. ĐỘI NGŨ</h2>
+                <h2 class="section-title">Đội ngũ</h2>
             </div>
 
             <div class="team-grid">
@@ -1062,6 +1126,25 @@
                     <div class="team-count">1</div>
                 </div>
             </div>
+
+            <!-- Case Study -->
+            <div class="team-case-study">
+                <div class="case-study-content">
+                    <div class="case-study-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="case-study-text">
+                        <h3 class="case-study-title">Khách hàng</h3>
+                        <p class="case-study-description">
+                            Đội ngũ chúng tôi đã <strong>chuyển đổi số thành công</strong> cho 
+                            <strong>Công ty Cổ phần Giáo dục Kỹ Năng Ngôi Sao</strong> 
+                            (<a href="https://knsngoisao.edu.vn/" target="_blank" rel="noopener noreferrer">knsngoisao.edu.vn</a>). 
+                            Từ một công ty giáo dục truyền thống, đã chuyển đổi thành công thành 
+                            <strong>công ty khoa học công nghệ</strong>, ứng dụng công nghệ vào quản lý và vận hành.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1069,50 +1152,96 @@
     <section id="tech-stack" class="section tech-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">E. TECH STACK</h2>
+                <h2 class="section-title">Tech Stack</h2>
             </div>
 
-            <div class="tech-grid">
-                <div class="tech-category">
-                    <h3 class="tech-category-title">Frontend</h3>
-                    <ul class="tech-list">
-                        <li>ReactJS</li>
-                    </ul>
+            <div class="tech-stack-grid">
+                <!-- Frontend -->
+                <div class="tech-category-card">
+                    <div class="tech-category-badge">Frontend</div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/react.svg" alt="React" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">React</div>
+                            <span class="tech-label">React</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tech-category">
-                    <h3 class="tech-category-title">Backend</h3>
-                    <ul class="tech-list">
-                        <li><strong>Framework:</strong> Ruby on Rails</li>
-                        <li><strong>Database:</strong> PostgreSQL</li>
-                        <li><strong>Caching:</strong> Redis</li>
-                        <li><strong>Background Jobs:</strong> Sidekiq</li>
-                    </ul>
+                <!-- Backend -->
+                <div class="tech-category-card">
+                    <div class="tech-category-badge">Backend</div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/rubyonrails.svg" alt="Ruby on Rails" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Rails</div>
+                            <span class="tech-label">Rails</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/postgresql.svg" alt="PostgreSQL" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">PostgreSQL</div>
+                            <span class="tech-label">PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/redis.svg" alt="Redis" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Redis</div>
+                            <span class="tech-label">Redis</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/sidekiq.svg" alt="Sidekiq" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Sidekiq</div>
+                            <span class="tech-label">Sidekiq</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tech-category">
-                    <h3 class="tech-category-title">DevOps & Infrastructure</h3>
-                    <ul class="tech-list">
-                        <li><strong>Cloud Platform:</strong> AWS</li>
-                        <li><strong>Storage:</strong> AWS S3, AWS Aurora …</li>
-                        <li><strong>CI/CD:</strong> Jenkins</li>
-                        <li><strong>CDN & Security:</strong> Cloudflare</li>
-                    </ul>
+                <!-- DevOps -->
+                <div class="tech-category-card">
+                    <div class="tech-category-badge">DevOps</div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/aws-svgrepo-com.svg" alt="AWS" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">AWS</div>
+                            <span class="tech-label">AWS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/aws-s3-svgrepo-com.svg" alt="S3" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">S3</div>
+                            <span class="tech-label">S3</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/aws-ec2-svgrepo-com.svg" alt="Aurora" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Aurora</div>
+                            <span class="tech-label">Aurora</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/jenkins.svg" alt="Jenkins" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Jenkins</div>
+                            <span class="tech-label">Jenkins</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/cloudflare.svg" alt="Cloudflare" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Cloudflare</div>
+                            <span class="tech-label">Cloudflare</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tech-category">
-                    <h3 class="tech-category-title">Development Tools</h3>
-                    <ul class="tech-list">
-                        <li><strong>Version Control:</strong> Github</li>
-                        <li><strong>Error Tracking:</strong> ErrorBit</li>
-                    </ul>
-                </div>
-
-                <div class="tech-category">
-                    <h3 class="tech-category-title">Others</h3>
-                    <ul class="tech-list">
-                        <li>Project management tools, communication tools, etc.</li>
-                    </ul>
+                <!-- Tools -->
+                <div class="tech-category-card">
+                    <div class="tech-category-badge">Tools</div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/github.svg" alt="GitHub" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">GitHub</div>
+                            <span class="tech-label">GitHub</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/rollbar.svg" alt="Rollbar" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Rollbar</div>
+                            <span class="tech-label">Rollbar</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1122,14 +1251,28 @@
     <section id="chi-phi" class="section cost-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">F. CHI PHÍ</h2>
+                <h2 class="section-title">Chi phí</h2>
             </div>
 
             <!-- I: Chi phí phát triển -->
             <div class="info-card" style="margin-bottom: var(--gap);">
                 <div class="card-header">I/ CHI PHÍ PHÁT TRIỂN</div>
                 <div class="card-body">
-                    <p class="muted-text" style="margin:0 0 8px 0; font-weight:750;">Nội dung sẽ được cập nhật sau.</p>
+                    <p class="muted-text" style="margin:0 0 12px 0; font-weight:750;">Chi phí phát triển sẽ được thanh toán từng phần theo giai đoạn:</p>
+                    <ul class="cost-list" style="margin: 0; padding-left: 20px;">
+                        <li style="margin-bottom: 0.75rem;">
+                            <strong>Kick-off</strong>
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <strong>GĐ 1, 2, 3, 4</strong>
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <strong>Kiểm thử - dùng thử toàn bộ</strong>
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <strong>Bàn giao</strong>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -1142,18 +1285,18 @@
                     <ul class="cost-list">
                         <li>
                             <strong>Phí domain (tên miền):</strong> 
-                            <span class="cost-amount">~ 500.000 - 1.500.000 VNĐ/năm</span>
+                            <span class="cost-amount">~ 500.000 - 800.000 VNĐ/năm</span>
                             <div class="cost-note">(Tùy loại domain: .vn, .com.vn, .edu.vn)</div>
                         </li>
                         <li>
                             <strong>Phí máy chủ AWS:</strong> 
-                            <span class="cost-amount">~ 5.000.000 - 15.000.000 VNĐ/tháng</span>
-                            <div class="cost-note">(Tùy cấu hình: EC2 t2.medium - t3.large, bandwidth, storage)</div>
+                            <span class="cost-amount">~ 3.000.000 - 6.000.000 VNĐ/tháng</span>
+                            <div class="cost-note">(Cấu hình phù hợp cho ~1000 user: EC2 t3.medium - t3.large, 2-4 vCPU, 4-8GB RAM)</div>
                         </li>
                         <li>
                             <strong>Phí dịch vụ dữ liệu AWS Aurora hoặc AWS RDS:</strong> 
-                            <span class="cost-amount">~ 3.000.000 - 10.000.000 VNĐ/tháng</span>
-                            <div class="cost-note">(Tùy cấu hình: db.t3.medium - db.t3.large, storage, backup)</div>
+                            <span class="cost-amount">~ 2.000.000 - 4.000.000 VNĐ/tháng</span>
+                            <div class="cost-note">(Cấu hình phù hợp cho cơ sở dữ liệu vừa và nhỏ: db.t3.small - db.t3.medium)</div>
                         </li>
                         <li>
                             <strong>Phí SMS / OTP (Zalo - Authy):</strong> 
@@ -1162,13 +1305,13 @@
                         </li>
                         <li>
                             <strong>Phí tích hợp ngân hàng / MoMo (nếu có):</strong> 
-                            <span class="cost-amount">~ 0,5 - 1,5% phí giao dịch</span>
+                            <span class="cost-amount">~ 0,5 - 0,8% phí giao dịch</span>
                             <div class="cost-note">(Tùy đối tác thanh toán, có thể có phí setup ban đầu)</div>
                         </li>
                     </ul>
                     <div class="cost-summary">
                         <strong>Tổng chi phí ước tính hàng tháng:</strong> 
-                        <span class="cost-total">~ 8.700.000 - 33.000.000 VNĐ/tháng</span>
+                        <span class="cost-total">~ 5.700.000 - 16.800.000 VNĐ/tháng</span>
                         <div class="cost-note" style="margin-top: 8px;">
                             <em>(Chưa bao gồm phí giao dịch thanh toán và chi phí phát sinh theo lưu lượng thực tế)</em>
                         </div>
@@ -1178,30 +1321,55 @@
         </div>
     </section>
 
-    <!-- Phần G: Các liên kết -->
-    <section id="lien-ket" class="section links-section">
+    <!-- Phần Liên hệ -->
+    <section id="lien-he" class="section contact-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">G. CÁC LIÊN KẾT</h2>
+            <div class="section-header-center">
+                <h2 class="section-title-center">Liên hệ</h2>
+                <!-- <p class="section-description">Liên hệ với chúng tôi để được tư vấn và hỗ trợ</p> -->
             </div>
-
-            <div class="demo-links">
-                <a href="http://tuyensinh.campuscloud.io.vn/" target="_blank" rel="noopener noreferrer" class="demo-link">
-                    <div class="demo-link-icon">🌐</div>
-                    <div class="demo-link-content">
-                        <div class="demo-link-title">Trang Tuyển sinh</div>
-                        <div class="demo-link-url">tuyensinh.campuscloud.io.vn</div>
+            <div class="contact-content">
+                <div class="contact-image-wrapper">
+                    <div class="contact-image">
+                        <img src="images/uni2.jpg" alt="Campus Cloud" class="contact-illustration">
+                        <div class="contact-wave"></div>
                     </div>
-                    <div class="demo-link-arrow">→</div>
-                </a>
-                <a href="http://staff.campuscloud.io.vn/" target="_blank" rel="noopener noreferrer" class="demo-link">
-                    <div class="demo-link-icon">👥</div>
-                    <div class="demo-link-content">
-                        <div class="demo-link-title">Trang Staff</div>
-                        <div class="demo-link-url">staff.campuscloud.io.vn</div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-header">
+                        <h3>Thái Văn Khoa</h3>
+                        <p class="contact-role">Software Engineer</p>
                     </div>
-                    <div class="demo-link-arrow">→</div>
-                </a>
+                    <div class="contact-details">
+                        <a href="tel:0978297082" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Điện thoại</span>
+                                <span class="contact-value">0978297082</span>
+                            </div>
+                        </a>
+                        <a href="mailto:thaivankhoa2802@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">thaivankhoa2802@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/thaivankhoa" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/thaivankhoa</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1211,12 +1379,65 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Campus Cloud</h3>
+                    <div class="footer-logo">
+                        <svg class="logo-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 552.000000 546.000000" preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,546.000000) scale(0.100000,-0.100000)" fill="#d0412c" stroke="none">
+                                <path d="M2550 4839 c-64 -9 -276 -75 -405 -125 -104 -41 -465 -221 -542 -270 -87 -56 -83 -32 -83 -441 -1 -390 4 -441 51 -598 74 -239 206 -422 439 -606 40 -32 70 -51 171 -111 174 -104 402 -191 504 -192 144 -2 488 162 700 334 158 129 294 303 366 470 82 189 99 313 99 709 0 318 -5 364 -44 400 -53 49 -430 232 -646 314 -301 113 -445 141 -610 116z m254 -406 c138 -111 433 -359 489 -412 32 -30 37 -41 37 -78 l0 -43 -655 0 -655 0 0 48 0 48 123 102 c473 393 519 432 531 432 5 0 63 -44 130 -97z m436 -1097 l0 -414 -32 -21 c-18 -11 -102 -66 -187 -121 -85 -55 -158 -100 -163 -100 -4 0 -8 67 -8 148 0 134 -2 152 -22 192 -32 61 -66 83 -136 88 -64 5 -101 -9 -139 -50 -41 -43 -53 -100 -53 -244 0 -74 -3 -134 -6 -134 -9 0 -75 41 -244 151 l-140 91 0 414 0 414 565 0 565 0 0 -414z"/>
+                                <path d="M2387 3553 c-4 -3 -7 -64 -7 -135 l0 -128 80 0 80 0 0 135 0 135 -73 0 c-41 0 -77 -3 -80 -7z"/>
+                                <path d="M2790 3425 l0 -135 95 0 95 0 0 135 0 135 -95 0 -95 0 0 -135z"/>
+                                <path d="M4312 2381 c-98 -34 -136 -89 -130 -187 5 -88 28 -111 158 -167 19 -8 57 -22 83 -32 82 -29 109 -78 67 -123 -47 -50 -161 -35 -190 26 -8 17 -18 32 -22 32 -19 0 -128 -56 -128 -66 0 -21 66 -83 116 -108 41 -21 65 -26 131 -27 119 -1 207 42 239 118 18 42 18 127 0 161 -28 54 -103 101 -218 138 -71 22 -103 52 -94 89 9 34 66 59 114 50 20 -4 48 -20 63 -37 l29 -30 50 19 c28 11 51 22 51 26 -1 4 -1 13 -1 20 0 8 -16 30 -35 50 -61 63 -181 83 -283 48z"/>
+                                <path d="M916 2365 c-119 -49 -176 -133 -184 -275 -10 -173 53 -288 185 -339 84 -32 203 -27 278 11 57 30 109 80 124 120 12 31 10 33 -56 53 -63 19 -60 20 -78 -16 -11 -21 -34 -39 -73 -56 -50 -24 -60 -25 -99 -14 -64 17 -87 35 -117 96 -25 49 -28 63 -24 132 3 65 8 85 32 120 34 51 78 73 146 73 46 0 56 -4 84 -33 17 -18 36 -40 41 -50 9 -16 14 -16 65 -1 30 9 58 19 63 23 12 12 -41 98 -80 130 -69 57 -205 68 -307 26z"/>
+                                <path d="M1568 2342 c-57 -169 -155 -449 -160 -457 -5 -8 -48 -142 -48 -149 0 0 33 -1 73 -1 l72 0 22 65 22 65 127 0 127 0 25 -68 25 -68 71 3 c41 2 70 7 69 13 -4 14 -64 179 -108 295 -20 52 -49 131 -65 175 -15 44 -36 99 -46 123 l-19 43 -86 4 -85 5 -16 -48z m153 -235 c20 -62 35 -115 32 -119 -5 -9 -147 -11 -155 -2 -6 5 11 65 55 187 11 31 23 55 26 51 3 -3 22 -56 42 -117z"/>
+                                <path d="M2080 2060 l0 -331 63 3 62 3 2 224 c1 123 3 225 5 226 2 2 16 -29 32 -68 28 -69 63 -153 121 -284 l28 -63 46 0 c46 0 47 1 63 43 9 23 43 103 76 177 32 74 62 147 66 163 3 15 11 27 16 27 6 0 10 -84 10 -222 l0 -223 60 0 60 0 0 328 0 327 -85 0 -85 0 -25 -49 c-13 -28 -36 -80 -50 -117 -14 -37 -29 -72 -34 -78 -4 -6 -21 -44 -36 -84 -15 -40 -32 -71 -38 -69 -6 2 -30 52 -54 113 -24 60 -52 127 -62 149 -10 22 -24 58 -31 80 -7 22 -18 43 -24 47 -6 4 -50 8 -98 8 l-88 0 0 -330z"/>
+                                <path d="M2930 2060 l0 -331 73 3 72 3 3 111 3 111 102 5 c112 5 148 18 190 67 37 44 50 94 44 167 -8 105 -57 162 -158 183 -27 6 -113 11 -189 11 l-140 0 0 -330z m316 195 c54 -35 56 -118 4 -156 -28 -21 -116 -35 -155 -25 -24 6 -25 9 -25 100 0 51 3 96 8 100 12 13 142 -2 168 -19z"/>
+                                <path d="M3512 2138 l3 -253 35 -49 c51 -72 127 -106 236 -106 71 0 88 4 145 33 51 25 70 42 94 81 l30 49 0 246 0 246 -67 3 -67 3 -3 -235 -3 -236 -31 -31 c-36 -36 -93 -47 -148 -29 -67 22 -70 36 -76 295 l-5 230 -73 3 -73 3 3 -253z"/>
+                                <path d="M2523 1550 c-93 -20 -160 -74 -209 -170 -25 -49 -28 -65 -28 -150 0 -83 3 -101 26 -145 61 -117 159 -175 294 -175 168 0 284 102 304 268 21 166 -54 314 -180 357 -57 20 -152 27 -207 15z m157 -132 c56 -28 83 -79 88 -163 9 -144 -54 -227 -175 -229 -86 -1 -146 60 -159 161 -23 184 103 303 246 231z"/>
+                                <path d="M1346 1530 c-57 -23 -116 -76 -154 -140 -25 -42 -27 -53 -27 -160 0 -132 8 -154 84 -229 60 -60 130 -86 231 -86 64 0 85 5 142 32 55 26 73 41 98 80 17 26 29 52 27 58 -2 5 -28 17 -58 27 l-54 17 -35 -39 c-40 -45 -74 -60 -131 -60 -112 0 -188 119 -160 251 24 110 67 149 165 149 53 0 61 -3 92 -34 19 -19 34 -42 34 -51 0 -11 5 -15 15 -11 9 3 40 13 70 22 30 8 55 18 55 20 0 14 -36 70 -67 105 -24 27 -51 44 -86 54 -71 21 -180 19 -241 -5z"/>
+                                <path d="M3483 1542 l-63 -3 0 -205 c0 -238 -6 -265 -67 -290 -53 -22 -118 -14 -152 20 l-26 26 -3 225 -3 225 -75 0 -75 0 3 -239 3 -239 31 -44 c95 -131 332 -143 443 -23 23 25 42 58 46 77 3 18 5 132 3 253 l-3 220 -62 -3z"/>
+                                <path d="M1840 1230 l0 -310 205 0 205 0 0 60 0 60 -135 0 -135 0 0 250 0 250 -70 0 -70 0 0 -310z"/>
+                                <path d="M3678 1231 l3 -309 109 -1 c202 -2 286 22 358 104 56 64 75 125 70 228 -6 134 -66 226 -175 267 -46 17 -78 20 -211 20 l-157 0 3 -309z m334 174 c15 -11 37 -39 49 -63 18 -37 21 -56 17 -126 -7 -135 -52 -176 -193 -176 l-75 0 0 196 0 196 88 -4 c67 -2 93 -7 114 -23z"/>
+                            </g>
+                        </svg>
+                        <div class="footer-logo-text">
+                            <div>CAMPUS</div>
+                            <div>CLOUD</div>
+                        </div>
+                    </div>
                     <p>Giải pháp quản lý giáo dục toàn diện</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Liên hệ</h4>
-                    <p>Thông tin liên hệ sẽ được cập nhật</p>
+                    <h4>Điều hướng</h4>
+                    <div class="footer-links">
+                        <a href="#tong-quan" class="footer-link">
+                            <i class="fas fa-home"></i> Tổng Quan
+                        </a>
+                        <a href="#modules" class="footer-link">
+                            <i class="fas fa-cubes"></i> Module
+                        </a>
+                        <a href="#roadmap" class="footer-link">
+                            <i class="fas fa-road"></i> Kế hoạch
+                        </a>
+                        <a href="#doi-ngu" class="footer-link">
+                            <i class="fas fa-users"></i> Đội ngũ
+                        </a>
+                        <a href="#chi-phi" class="footer-link">
+                            <i class="fas fa-dollar-sign"></i> Chi Phí
+                        </a>
+                        <a href="#lien-he" class="footer-link">
+                            <i class="fas fa-envelope"></i> Liên Hệ
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên kết</h4>
+                    <div class="footer-links">
+                        <a href="http://tuyensinh.campuscloud.io.vn/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                            <i class="fas fa-globe"></i> Trang Tuyển sinh
+                        </a>
+                        <a href="http://staff.campuscloud.io.vn/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                            <i class="fas fa-user-tie"></i> Trang Staff
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
