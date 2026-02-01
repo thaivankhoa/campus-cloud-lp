@@ -3516,47 +3516,103 @@ body {
     background: var(--bg-white);
 }
 
-.tech-grid {
+.tech-stack-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--gap);
-    max-width: 1200px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.tech-category {
+.tech-category-card {
     background: var(--bg-white);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
     padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
 }
 
-.tech-category-title {
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--border-color);
+.tech-category-card:hover {
+    box-shadow: 0 4px 16px rgba(208, 65, 44, 0.12);
+    transform: translateY(-2px);
 }
 
-.tech-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.tech-list li {
-    margin: 0.75rem 0;
-    padding-left: 0;
-    line-height: 1.6;
-    color: var(--text-dark);
-}
-
-.tech-list li strong {
-    color: var(--text-dark);
+.tech-category-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
     font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.tech-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: var(--radius2);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    min-width: 100px;
+    flex: 1;
+    min-width: 0;
+}
+
+.tech-item:hover {
+    background: var(--primary-light-bg);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(208, 65, 44, 0.15);
+}
+
+.tech-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover .tech-logo {
+    transform: scale(1.1);
+}
+
+.tech-logo-fallback {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-white);
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+}
+
+.tech-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.tech-item:hover .tech-label {
+    color: var(--primary-color);
 }
 
 /* Cost Section */
@@ -3619,8 +3675,34 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .tech-grid {
+    .tech-stack-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 100%;
+    }
+
+    .tech-items {
+        gap: 0.75rem;
+    }
+
+    .tech-item {
+        min-width: 90px;
+        padding: 0.75rem;
+    }
+
+    .tech-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tech-logo-fallback {
+        width: 40px;
+        height: 40px;
+        font-size: 0.7rem;
+    }
+
+    .tech-label {
+        font-size: 0.8rem;
     }
 
     .team-card {
@@ -3629,10 +3711,6 @@ body {
 
     .team-count {
         font-size: 1.75rem;
-    }
-
-    .tech-category {
-        padding: 1.25rem;
     }
 }
 

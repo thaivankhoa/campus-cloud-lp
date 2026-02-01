@@ -1136,47 +1136,93 @@
                 <h2 class="section-title">Tech Stack</h2>
             </div>
 
-            <div class="tech-grid">
-                <div class="tech-category">
-                    <h3 class="tech-category-title">Frontend</h3>
-                    <ul class="tech-list">
-                        <li>ReactJS</li>
-                    </ul>
+            <div class="tech-stack-grid">
+                <!-- Frontend -->
+                <div class="tech-category-card">
+                    <div class="tech-category-badge">Frontend</div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/react.svg" alt="React" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">React</div>
+                            <span class="tech-label">React</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tech-category">
-                    <h3 class="tech-category-title">Backend</h3>
-                    <ul class="tech-list">
-                        <li><strong>Framework:</strong> Ruby on Rails</li>
-                        <li><strong>Database:</strong> PostgreSQL</li>
-                        <li><strong>Caching:</strong> Redis</li>
-                        <li><strong>Background Jobs:</strong> Sidekiq</li>
-                    </ul>
+                <!-- Backend -->
+                <div class="tech-category-card">
+                    <div class="tech-category-badge">Backend</div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/rubyonrails.svg" alt="Ruby on Rails" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Rails</div>
+                            <span class="tech-label">Rails</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/postgresql.svg" alt="PostgreSQL" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">PostgreSQL</div>
+                            <span class="tech-label">PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/redis.svg" alt="Redis" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Redis</div>
+                            <span class="tech-label">Redis</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/sidekiq.svg" alt="Sidekiq" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Sidekiq</div>
+                            <span class="tech-label">Sidekiq</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tech-category">
-                    <h3 class="tech-category-title">DevOps & Infrastructure</h3>
-                    <ul class="tech-list">
-                        <li><strong>Cloud Platform:</strong> AWS</li>
-                        <li><strong>Storage:</strong> AWS S3, AWS Aurora …</li>
-                        <li><strong>CI/CD:</strong> Jenkins</li>
-                        <li><strong>CDN & Security:</strong> Cloudflare</li>
-                    </ul>
+                <!-- DevOps -->
+                <div class="tech-category-card">
+                    <div class="tech-category-badge">DevOps</div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/aws-svgrepo-com.svg" alt="AWS" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">AWS</div>
+                            <span class="tech-label">AWS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/aws-s3-svgrepo-com.svg" alt="S3" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">S3</div>
+                            <span class="tech-label">S3</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/aws-ec2-svgrepo-com.svg" alt="Aurora" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Aurora</div>
+                            <span class="tech-label">Aurora</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/jenkins.svg" alt="Jenkins" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Jenkins</div>
+                            <span class="tech-label">Jenkins</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/cloudflare.svg" alt="Cloudflare" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Cloudflare</div>
+                            <span class="tech-label">Cloudflare</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tech-category">
-                    <h3 class="tech-category-title">Development Tools</h3>
-                    <ul class="tech-list">
-                        <li><strong>Version Control:</strong> Github</li>
-                        <li><strong>Error Tracking:</strong> ErrorBit</li>
-                    </ul>
-                </div>
-
-                <div class="tech-category">
-                    <h3 class="tech-category-title">Others</h3>
-                    <ul class="tech-list">
-                        <li>Project management tools, communication tools, etc.</li>
-                    </ul>
+                <!-- Tools -->
+                <div class="tech-category-card">
+                    <div class="tech-category-badge">Tools</div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/github.svg" alt="GitHub" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">GitHub</div>
+                            <span class="tech-label">GitHub</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/rollbar.svg" alt="Rollbar" class="tech-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="tech-logo-fallback" style="display:none;">Rollbar</div>
+                            <span class="tech-label">Rollbar</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
