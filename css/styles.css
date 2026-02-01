@@ -3823,17 +3823,22 @@ body {
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
+    gap: 0;
+    align-items: stretch;
     margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-white);
 }
 
 .contact-info {
-    background: linear-gradient(135deg, var(--bg-light) 0%, #f8f9fa 100%);
-    padding: 2.5rem;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border-color);
+    background: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
 }
 
 .contact-header {
@@ -3919,35 +3924,69 @@ body {
     color: var(--primary-color);
 }
 
+.contact-image-wrapper {
+    position: relative;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+
 .contact-image {
     position: relative;
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border-color);
-}
-
-.contact-screenshot {
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
-.contact-image:hover .contact-screenshot {
-    transform: scale(1.05);
+.contact-illustration {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+.contact-wave {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+    border-radius: 50% 0 0 50%;
+    transform: skewX(-10deg);
+    z-index: 3;
 }
 
 /* Responsive Contact */
 @media (max-width: 968px) {
     .contact-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+    }
+    
+    .contact-image-wrapper {
+        order: -1;
+        min-height: 300px;
     }
     
     .contact-image {
-        order: -1;
+        min-height: 300px;
+    }
+    
+    .contact-info {
+        padding: 2rem;
+    }
+    
+    .contact-wave {
+        display: none;
     }
 }
 

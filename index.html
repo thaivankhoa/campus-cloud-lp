@@ -1193,7 +1193,21 @@
             <div class="info-card" style="margin-bottom: var(--gap);">
                 <div class="card-header">I/ CHI PHÍ PHÁT TRIỂN</div>
                 <div class="card-body">
-                    <p class="muted-text" style="margin:0 0 8px 0; font-weight:750;">Nội dung sẽ được cập nhật sau.</p>
+                    <p class="muted-text" style="margin:0 0 12px 0; font-weight:750;">Chi phí phát triển sẽ được thanh toán từng phần theo giai đoạn:</p>
+                    <ul class="cost-list" style="margin: 0; padding-left: 20px;">
+                        <li style="margin-bottom: 0.75rem;">
+                            <strong>Kick-off</strong>
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <strong>GĐ 1, 2, 3, 4</strong>
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <strong>Kiểm thử - dùng thử toàn bộ</strong>
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <strong>Bàn giao</strong>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -1206,18 +1220,18 @@
                     <ul class="cost-list">
                         <li>
                             <strong>Phí domain (tên miền):</strong> 
-                            <span class="cost-amount">~ 500.000 - 1.500.000 VNĐ/năm</span>
+                            <span class="cost-amount">~ 500.000 - 800.000 VNĐ/năm</span>
                             <div class="cost-note">(Tùy loại domain: .vn, .com.vn, .edu.vn)</div>
                         </li>
                         <li>
                             <strong>Phí máy chủ AWS:</strong> 
-                            <span class="cost-amount">~ 5.000.000 - 15.000.000 VNĐ/tháng</span>
-                            <div class="cost-note">(Tùy cấu hình: EC2 t2.medium - t3.large, bandwidth, storage)</div>
+                            <span class="cost-amount">~ 3.000.000 - 6.000.000 VNĐ/tháng</span>
+                            <div class="cost-note">(Cấu hình phù hợp cho ~1000 user: EC2 t3.medium - t3.large, 2-4 vCPU, 4-8GB RAM)</div>
                         </li>
                         <li>
                             <strong>Phí dịch vụ dữ liệu AWS Aurora hoặc AWS RDS:</strong> 
-                            <span class="cost-amount">~ 3.000.000 - 10.000.000 VNĐ/tháng</span>
-                            <div class="cost-note">(Tùy cấu hình: db.t3.medium - db.t3.large, storage, backup)</div>
+                            <span class="cost-amount">~ 2.000.000 - 4.000.000 VNĐ/tháng</span>
+                            <div class="cost-note">(Cấu hình phù hợp cho cơ sở dữ liệu vừa và nhỏ: db.t3.small - db.t3.medium)</div>
                         </li>
                         <li>
                             <strong>Phí SMS / OTP (Zalo - Authy):</strong> 
@@ -1226,13 +1240,13 @@
                         </li>
                         <li>
                             <strong>Phí tích hợp ngân hàng / MoMo (nếu có):</strong> 
-                            <span class="cost-amount">~ 0,5 - 1,5% phí giao dịch</span>
+                            <span class="cost-amount">~ 0,5 - 0,8% phí giao dịch</span>
                             <div class="cost-note">(Tùy đối tác thanh toán, có thể có phí setup ban đầu)</div>
                         </li>
                     </ul>
                     <div class="cost-summary">
                         <strong>Tổng chi phí ước tính hàng tháng:</strong> 
-                        <span class="cost-total">~ 8.700.000 - 33.000.000 VNĐ/tháng</span>
+                        <span class="cost-total">~ 5.700.000 - 16.800.000 VNĐ/tháng</span>
                         <div class="cost-note" style="margin-top: 8px;">
                             <em>(Chưa bao gồm phí giao dịch thanh toán và chi phí phát sinh theo lưu lượng thực tế)</em>
                         </div>
@@ -1250,6 +1264,12 @@
                 <!-- <p class="section-description">Liên hệ với chúng tôi để được tư vấn và hỗ trợ</p> -->
             </div>
             <div class="contact-content">
+                <div class="contact-image-wrapper">
+                    <div class="contact-image">
+                        <img src="images/uni2.jpg" alt="Campus Cloud" class="contact-illustration">
+                        <div class="contact-wave"></div>
+                    </div>
+                </div>
                 <div class="contact-info">
                     <div class="contact-header">
                         <h3>Thái Văn Khoa</h3>
@@ -1284,9 +1304,6 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="contact-image">
-                    <img src="images/screenshot1.jpg" alt="Campus Cloud Screenshot" class="contact-screenshot">
                 </div>
             </div>
         </div>
