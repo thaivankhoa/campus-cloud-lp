@@ -2852,7 +2852,9 @@ body {
         transparent calc(50% + 1px));
     pointer-events: none;
     z-index: 1;
+    transform-origin: top left;
 }
+
 
 .diagonal-text-bottom-left {
     position: absolute;
