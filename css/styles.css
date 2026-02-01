@@ -3470,7 +3470,7 @@ body {
 
 .team-case-study {
     max-width: 900px;
-    margin: 0 auto 3rem;
+    margin: 3rem auto 0;
 }
 
 .case-study-content {
@@ -3737,7 +3737,7 @@ body {
 
 @media (max-width: 768px) {
     .team-case-study {
-        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 
     .case-study-content {
