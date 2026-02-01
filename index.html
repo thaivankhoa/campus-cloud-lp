@@ -952,74 +952,140 @@
                 <h2 class="section-title">C. ROADMAP - KẾ HOẠCH TRIỂN KHAI</h2>
             </div>
 
-            <div class="roadmap-container">
-                <!-- GĐ 1.1 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 1.1</div>
-                        <div class="phase-line"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Tài chính - học vụ, tích hợp thanh toán, xuất hóa đơn</li>
-                            <li>Chương trình đào tạo</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- GĐ 1.2 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 1.2</div>
-                        <div class="phase-line"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Tuyển sinh</li>
-                            <li>Nhập học</li>
-                            <li>Quản lý sinh viên lớp học</li>
-                        </ul>
+            <div class="gantt-container">
+                <div class="gantt-header">
+                    <div class="gantt-legend">
+                        <div class="legend-item">
+                            <span class="legend-color dev"></span>
+                            <span>Phát triển</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color test"></span>
+                            <span>Thử nghiệm và kiểm định</span>
+                        </div>
                     </div>
                 </div>
-
-                <!-- GĐ 2 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 2</div>
-                        <div class="phase-line"></div>
+                
+                <div class="gantt-wrapper">
+                    <div class="gantt-header-row">
+                        <div class="gantt-header-corner">
+                            <div class="header-diagonal">
+                                <span class="diagonal-text-top">Chi tiết</span>
+                                <span class="diagonal-text-bottom">Timeline</span>
+                            </div>
+                        </div>
+                        <div class="gantt-timeline-header">
+                            <div class="timeline-cell">0</div>
+                            <div class="timeline-cell">1.5</div>
+                            <div class="timeline-cell">3</div>
+                            <div class="timeline-cell">4.5</div>
+                            <div class="timeline-cell">5.5</div>
+                            <div class="timeline-cell">7.5</div>
+                            <div class="timeline-cell">8.5</div>
+                            <div class="timeline-cell">9</div>
+                            <div class="timeline-cell">10</div>
+                        </div>
                     </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Thời khóa biểu - lịch thi</li>
-                            <li>Điểm số - giáo vụ - điểm rèn luyện - kqht</li>
-                        </ul>
+                    
+                    <div class="gantt-content-wrapper">
+                        <div class="gantt-sidebar">
+                            <div class="gantt-row-header">Giai đoạn</div>
+                            <div class="gantt-row">GĐ 1.1</div>
+                            <div class="gantt-row">GĐ 1.2</div>
+                            <div class="gantt-row">GĐ 2</div>
+                            <div class="gantt-row">GĐ 3</div>
+                            <div class="gantt-row">GĐ 4</div>
+                        </div>
+                        
+                        <div class="gantt-chart">
+                            <div class="gantt-rows">
+                        
+                        <div class="gantt-rows">
+                            <!-- GĐ 1.1 -->
+                            <div class="gantt-row-content">
+                                <div class="gantt-modules">
+                                    <span class="module-badge">Tài Chính - Học Vụ</span>
+                                    <span class="module-badge">Chương Trình Đào Tạo</span>
+                                </div>
+                                <div class="gantt-bars">
+                                    <div class="gantt-bar dev" style="left: 0%; width: 15%;">
+                                        <span class="bar-text">1.5 tháng</span>
+                                    </div>
+                                    <div class="gantt-bar test" style="left: 15%; width: 15%;">
+                                        <span class="bar-text">1.5 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- GĐ 1.2 -->
+                            <div class="gantt-row-content">
+                                <div class="gantt-modules">
+                                    <span class="module-badge">Tuyển Sinh - Nhập Học</span>
+                                    <span class="module-badge">Quản Lý Lớp Học</span>
+                                </div>
+                                <div class="gantt-bars">
+                                    <div class="gantt-bar dev" style="left: 15%; width: 15%;">
+                                        <span class="bar-text">1.5 tháng</span>
+                                    </div>
+                                    <div class="gantt-bar test" style="left: 30%; width: 15%;">
+                                        <span class="bar-text">1.5 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- GĐ 2 -->
+                            <div class="gantt-row-content">
+                                <div class="gantt-modules">
+                                    <span class="module-badge">Thời Khóa Biểu - Lịch Thi</span>
+                                    <span class="module-badge">Điểm Số - Giáo Vụ</span>
+                                </div>
+                                <div class="gantt-bars">
+                                    <div class="gantt-bar dev" style="left: 30%; width: 25%;">
+                                        <span class="bar-text">2.5 tháng</span>
+                                    </div>
+                                    <div class="gantt-bar test" style="left: 55%; width: 20%;">
+                                        <span class="bar-text">2 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- GĐ 3 -->
+                            <div class="gantt-row-content">
+                                <div class="gantt-modules">
+                                    <span class="module-badge">Trang Sinh Viên</span>
+                                </div>
+                                <div class="gantt-bars">
+                                    <div class="gantt-bar dev" style="left: 55%; width: 20%;">
+                                        <span class="bar-text">2 tháng</span>
+                                    </div>
+                                    <div class="gantt-bar test" style="left: 75%; width: 10%;">
+                                        <span class="bar-text">1 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- GĐ 4 -->
+                            <div class="gantt-row-content">
+                                <div class="gantt-modules">
+                                    <span class="module-badge">Trang Giảng Viên</span>
+                                </div>
+                                <div class="gantt-bars">
+                                    <div class="gantt-bar dev" style="left: 75%; width: 15%;">
+                                        <span class="bar-text">1.5 tháng</span>
+                                    </div>
+                                    <div class="gantt-bar test" style="left: 90%; width: 10%;">
+                                        <span class="bar-text">1 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- GĐ 3 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 3</div>
-                        <div class="phase-line"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Trang sinh viên</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- GĐ 4 -->
-                <div class="roadmap-phase">
-                    <div class="phase-header">
-                        <div class="phase-number">GĐ 4</div>
-                        <div class="phase-line phase-line-last"></div>
-                    </div>
-                    <div class="phase-content">
-                        <ul class="phase-items">
-                            <li>Trang giảng viên</li>
-                        </ul>
-                    </div>
+                
+                <div class="gantt-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Khi kết thúc 1 phase dev, QA sẽ bắt đầu test đồng thời dev chuyển sang giai đoạn tiếp theo</span>
                 </div>
             </div>
         </div>
