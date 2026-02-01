@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Cloud - Giải pháp quản lý giáo dục</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -36,6 +38,11 @@
                         <div class="logo-line">CLOUD</div>
                     </div>
                 </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-menu">
                     <li><a href="#tong-quan">Tổng Quan</a></li>
                     <li><a href="#modules">Module</a></li>
@@ -498,7 +505,7 @@
                         </span>
                     </a>
                     <a href="#module-vi" class="module-toc-item">
-                        <span class="toc-module-name">VI/ QUẢN LÝ HỌC VỤ, ĐIỂM</span>
+                        <span class="toc-module-name">VI/ QUẢN LÝ HỌC VỤ, ĐIỂM SỐ</span>
                         <span class="toc-departments">
                             <span class="toc-dept-badge">Phòng đào tạo</span>
                         </span>
@@ -552,7 +559,7 @@
                                 <div class="feature-content">
                                     <h4 class="feature-title">
                                         <i class="fas fa-chart-line"></i>
-                                        Trang tổng hợp
+                                        Trang tổng hợp - thống kê
                                     </h4>
                                 </div>
                             </div>
@@ -592,7 +599,7 @@
                                 <div class="feature-content">
                                     <h4 class="feature-title">
                                         <i class="fas fa-wallet"></i>
-                                        Các khoản thu khác
+                                        Các khoản thu - chi khác
                                     </h4>
                                 </div>
                             </div>
@@ -621,7 +628,15 @@
                     <div class="module-detail-body">
                         <div class="module-features">
                             <ul class="feature-list-simple">
-                                <li><i class="fas fa-check-circle"></i> Hỗ trợ nhà trường xây dựng chương trình đào tạo theo cấp bậc: Cấp Độ Đào Tạo, Số môn học, số tiết học trong từng môn, thời gian học, thể thức thi</li>
+                                <li><i class="fas fa-check-circle"></i> Hỗ trợ nhà trường xây dựng chương trình đào tạo:
+                                    <ul class="feature-sublist">
+                                        <li>Cấp bậc</li>
+                                        <li>Số môn học</li>
+                                        <li>Số tiết học từng môn</li>
+                                        <li>Thời gian học</li>
+                                        <li>Thể thức thi</li>
+                                    </ul>
+                                </li>
                                 <li><i class="fas fa-check-circle"></i> Khảo sát đào tạo</li>
                                 <li><i class="fas fa-check-circle"></i> Ngân hàng đề thi</li>
                             </ul>
@@ -669,7 +684,7 @@
                                         Trang tuyển sinh
                                     </h4>
                                     <ul class="feature-list">
-                                        <li><i class="fas fa-check-circle"></i> Đăng ký tuyển sinh online, xác nhận hồ sơ</li>
+                                        <li><i class="fas fa-check-circle"></i> Đăng ký tuyển sinh online, xác nhận hồ sơ qua OTP (email / SĐT)</li>
                                         <li><i class="fas fa-check-circle"></i> Đăng nhập vào hệ thống người ứng tuyển:
                                             <ul class="feature-sublist">
                                                 <li>Cập nhật hồ sơ online</li>
@@ -691,10 +706,7 @@
                                     <ul class="feature-list">
                                         <li><i class="fas fa-check-circle"></i> Trang thống kê</li>
                                         <li><i class="fas fa-check-circle"></i> Quản lý danh sách người ứng tuyển</li>
-                                        <li><i class="fas fa-check-circle"></i> Quản lý hồ sơ xét tuyển:
-                                            <ul class="feature-sublist">
-                                                <li>Quản lý, cập nhật, xét duyệt hồ sơ</li>
-                                            </ul>
+                                        <li><i class="fas fa-check-circle"></i> Quản lý hồ sơ xét tuyển: quản lý, cập nhật, xét duyệt hồ sơ
                                         </li>
                                     </ul>
                                 </div>
@@ -849,7 +861,7 @@
                         <div class="module-header-content">
                             <div class="module-number">VI</div>
                             <div class="module-title-wrapper">
-                                <h3 class="module-title">Quản lý học vụ, điểm</h3>
+                                <h3 class="module-title">Quản lý học vụ - điểm số</h3>
                                 <div class="module-badges">
                                     <span class="module-badge">
                                         <i class="fas fa-graduation-cap"></i>
@@ -1375,10 +1387,10 @@
     </section>
 
     <!-- Footer -->
-    <footer id="lien-he" class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-section footer-brand">
                     <div class="footer-logo">
                         <svg class="logo-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 552.000000 546.000000" preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,546.000000) scale(0.100000,-0.100000)" fill="#d0412c" stroke="none">
@@ -1405,9 +1417,20 @@
                     </div>
                     <p>Giải pháp quản lý giáo dục toàn diện</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Điều hướng</h4>
+                <div class="footer-section footer-nav-section">
+                    <h4>Liên kết</h4>
                     <div class="footer-links">
+                        <a href="http://tuyensinh.campuscloud.io.vn/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                            <i class="fas fa-globe"></i> Trang Tuyển sinh
+                        </a>
+                        <a href="http://staff.campuscloud.io.vn/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                            <i class="fas fa-user-tie"></i> Trang Staff
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section footer-nav-section">
+                    <h4>Điều hướng</h4>
+                    <div class="footer-links footer-links-2col">
                         <a href="#tong-quan" class="footer-link">
                             <i class="fas fa-home"></i> Tổng Quan
                         </a>
@@ -1425,17 +1448,6 @@
                         </a>
                         <a href="#lien-he" class="footer-link">
                             <i class="fas fa-envelope"></i> Liên Hệ
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Liên kết</h4>
-                    <div class="footer-links">
-                        <a href="http://tuyensinh.campuscloud.io.vn/" target="_blank" rel="noopener noreferrer" class="footer-link">
-                            <i class="fas fa-globe"></i> Trang Tuyển sinh
-                        </a>
-                        <a href="http://staff.campuscloud.io.vn/" target="_blank" rel="noopener noreferrer" class="footer-link">
-                            <i class="fas fa-user-tie"></i> Trang Staff
                         </a>
                     </div>
                 </div>
