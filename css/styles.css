@@ -5947,7 +5947,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80px;
+    height: 110px;
+    box-sizing: border-box;
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -6120,7 +6121,8 @@ body {
 .gantt-row-content {
     display: flex;
     border-bottom: 1px solid var(--border-color);
-    min-height: 80px;
+    height: 110px;
+    box-sizing: border-box;
     position: relative;
     .footer-content {
         grid-template-columns: 1fr;
@@ -6149,13 +6151,15 @@ body {
 .gantt-modules {
     width: 200px;
     flex-shrink: 0;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     justify-content: center;
     border-right: 1px solid var(--border-color);
     background: var(--bg-light);
+    height: 100%;
+    box-sizing: border-box;
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -6191,7 +6195,7 @@ body {
 .gantt-bars {
     flex: 1;
     position: relative;
-    min-height: 80px;
+    height: 100%;
     background: repeating-linear-gradient(
         90deg,
         transparent,
