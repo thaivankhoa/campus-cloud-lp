@@ -5626,6 +5626,25 @@ body {
     background: var(--bg-white);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+}
+
+/* Roadmap Image for Mobile/Tablet */
+.roadmap-image-mobile {
+    display: none;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.roadmap-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+/* Gantt Chart for Desktop */
+.gantt-chart-desktop {
+    display: block;
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -6318,6 +6337,16 @@ body {
 
 /* Responsive Gantt */
 @media (max-width: 1024px) {
+    /* Hide Gantt chart on tablet */
+    .gantt-chart-desktop {
+        display: none !important;
+    }
+    
+    /* Show roadmap image on tablet */
+    .roadmap-image-mobile {
+        display: block;
+    }
+    
     .gantt-wrapper {
         flex-direction: column;
     }
@@ -6371,6 +6400,16 @@ body {
 @media (max-width: 768px) {
     .gantt-container {
         padding: 1.5rem;
+    }
+    
+    /* Hide Gantt chart on mobile/tablet */
+    .gantt-chart-desktop {
+        display: none !important;
+    }
+    
+    /* Show roadmap image on mobile/tablet */
+    .roadmap-image-mobile {
+        display: block;
     }
     
     .gantt-timeline-header {
