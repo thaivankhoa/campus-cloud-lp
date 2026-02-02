@@ -1289,15 +1289,51 @@
                             <strong>Kick-off</strong>
                         </li>
                         <li style="margin-bottom: 0.75rem;">
-                            <strong>GĐ 1, 2, 3, 4</strong>
+                            <strong>GĐ 1.1</strong> - Kết thúc phase dev (1.5 tháng)
                         </li>
                         <li style="margin-bottom: 0.75rem;">
-                            <strong>Kiểm thử - dùng thử toàn bộ</strong>
+                            <strong>GĐ 1.2</strong> - Kết thúc phase dev (1.5 tháng) ở mốc 3 tháng
                         </li>
                         <li style="margin-bottom: 0.75rem;">
-                            <strong>Bàn giao</strong>
+                            <strong>GĐ 2</strong> - Kết thúc phase dev (2.5 tháng) ở mốc 5.5 tháng
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <strong>GĐ 3</strong> - Kết thúc phase dev (1.5 tháng) ở mốc 7 tháng
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <strong>GĐ 4</strong> - Kết thúc phase dev và test (2 tháng) ở mốc 9 tháng
                         </li>
                     </ul>
+                    
+                    <!-- Payment Timeline -->
+                    <div class="payment-timeline">
+                        <div class="timeline-track">
+                            <div class="timeline-marker" style="left: 0%;">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">Kick-off</div>
+                            </div>
+                            <div class="timeline-marker" style="left: 16.6667%;">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">GĐ 1.1<br><span class="marker-time">1.5 tháng</span></div>
+                            </div>
+                            <div class="timeline-marker" style="left: 33.3333%;">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">GĐ 1.2<br><span class="marker-time">3 tháng</span></div>
+                            </div>
+                            <div class="timeline-marker" style="left: 61.1111%;">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">GĐ 2<br><span class="marker-time">5.5 tháng</span></div>
+                            </div>
+                            <div class="timeline-marker" style="left: 77.7778%;">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">GĐ 3<br><span class="marker-time">7 tháng</span></div>
+                            </div>
+                            <div class="timeline-marker" style="left: 100%;">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">GĐ 4<br><span class="marker-time">9 tháng</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -1314,19 +1350,30 @@
                             <div class="cost-note">(Tùy loại domain: .vn, .com.vn, .edu.vn)</div>
                         </li>
                         <li>
-                            <strong>Phí máy chủ AWS:</strong> 
-                            <span class="cost-amount">~ 3.000.000 - 6.000.000 VNĐ/tháng</span>
-                            <div class="cost-note">(Cấu hình phù hợp cho ~1000 user: EC2 t3.medium - t3.large, 2-4 vCPU, 4-8GB RAM)</div>
+                            <strong>Phí máy chủ Matbao (Cloud Server):</strong> 
+                            <span class="cost-amount">~ 4.550.000 VNĐ/năm</span>
+                            <div class="cost-note">
+                                (Cấu hình: 4 Cores CPU / 6GB RAM - Linux, giá khi thanh toán 2 năm: 379.050 VNĐ/tháng)<br>
+                                <em>Quy đổi: ~ 379.050 VNĐ/tháng</em>
+                            </div>
                         </li>
                         <li>
-                            <strong>Phí dịch vụ dữ liệu AWS Aurora hoặc AWS RDS:</strong> 
-                            <span class="cost-amount">~ 2.000.000 - 4.000.000 VNĐ/tháng</span>
-                            <div class="cost-note">(Cấu hình phù hợp cho cơ sở dữ liệu vừa và nhỏ: db.t3.small - db.t3.medium)</div>
+                            <strong>Phí dịch vụ cơ sở dữ liệu (AWS RDS):</strong> 
+                            <span class="cost-amount">~ 4.500.000 - 9.500.000 VNĐ/năm</span>
+                            <div class="cost-note">
+                                (AWS RDS: db.t3.micro/small, 20-50GB storage gp3, bao gồm backup, phù hợp cho trường trung cấp - cao đẳng, dữ liệu không lớn)<br>
+                                <em>Chi tiết: Instance (~3.500.000 - 7.000.000 VNĐ/năm) + Storage (~660.000 - 1.650.000 VNĐ/năm) + Backup</em><br>
+                                <em>Quy đổi: ~ 375.000 - 790.000 VNĐ/tháng</em>
+                            </div>
                         </li>
                         <li>
-                            <strong>Phí SMS / OTP (Zalo - Authy):</strong> 
-                            <span class="cost-amount">~ 200 - 500 VNĐ/SMS</span>
-                            <div class="cost-note">(Ước tính: 1.000 - 5.000 SMS/tháng = 200.000 - 2.500.000 VNĐ/tháng)</div>
+                            <strong>Phí SMS / OTP (Viettel hoặc Zalo):</strong> 
+                            <span class="cost-amount">~ 1.200.000 - 4.800.000 VNĐ/năm</span>
+                            <div class="cost-note">
+                                (SMS chỉ dùng khi xác thực hồ sơ. Ước tính: ~5.000 hồ sơ/năm, mỗi hồ sơ 1-2 SMS = 500 - 1.000 SMS/tháng)<br>
+                                <em>Giá: 200 - 400 VNĐ/SMS (dịch vụ trong nước, rẻ hơn Authy)</em><br>
+                                <em>Quy đổi: ~ 100.000 - 400.000 VNĐ/tháng</em>
+                            </div>
                         </li>
                         <li>
                             <strong>Phí tích hợp ngân hàng / MoMo (nếu có):</strong> 
@@ -1335,9 +1382,10 @@
                         </li>
                     </ul>
                     <div class="cost-summary">
-                        <strong>Tổng chi phí ước tính hàng tháng:</strong> 
-                        <span class="cost-total">~ 5.700.000 - 16.800.000 VNĐ/tháng</span>
+                        <strong>Tổng chi phí duy trì hệ thống ước tính:</strong> 
+                        <span class="cost-total">~ 10.750.000 - 19.650.000 VNĐ/năm</span>
                         <div class="cost-note" style="margin-top: 8px;">
+                            <em>Quy đổi: ~ 895.000 - 1.637.000 VNĐ/tháng</em><br>
                             <em>(Chưa bao gồm phí giao dịch thanh toán và chi phí phát sinh theo lưu lượng thực tế)</em>
                         </div>
                     </div>
